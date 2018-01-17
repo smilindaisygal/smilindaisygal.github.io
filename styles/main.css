@@ -13,7 +13,7 @@ body {
 
 h1 {
     font-size: 3rem;
-    color: darkblue;
+    color: lightskyblue;
 }
 
 h2 {
@@ -30,8 +30,8 @@ header, main, footer {
 
 header, footer, footer a {
     text-align: center;
-    background-color: lightgrey;
-    color: darkblue;
+    background-color: darkblue;
+    color: lightskyblue;
 }
 
 header img {
