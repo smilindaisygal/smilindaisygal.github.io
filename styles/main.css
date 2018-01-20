@@ -8,12 +8,12 @@ body {
     font-size: 16px; 
     line-height: 32px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: dark purple;
+    color: darkblue;
 }
 
 h1 {
     font-size: 2rem;
-    color: dark purple;
+    color: darkblue;
 }
 
 h2 {
@@ -30,8 +30,8 @@ header, main, footer {
 
 header, footer, footer a {
     text-align: center;
-    background-color: dark brown;
-    color: dark purple;
+    background-color: brown;
+    color: darkblue;
 }
 
 header img {
