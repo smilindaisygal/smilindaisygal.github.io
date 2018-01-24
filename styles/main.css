@@ -17,7 +17,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.75rem;
+    font-size: 1rem;
     text-align: center;
     border-bottom: 1px solid #bbb;
 }
@@ -30,7 +30,7 @@ header, main, footer {
 
 header, footer, footer a {
     text-align: center;
-    background-color: lightskyblue;
+    background-color: skyblue;
     color: darkblue;
 }
 
