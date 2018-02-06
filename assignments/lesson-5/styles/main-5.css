@@ -8,12 +8,13 @@ body {
 }
 
 header, nav, main, footer { 
-    max-width: 60%;
+    max-width: 40%;
     font-family: Helvetica, Arial, sans-serif;
+    text-align:center;
 }
 
 header {
-    background-color: rgb(231,36,47);
+    background-color: rgb(13,78,96 );
 }
 
 header h1,  {
@@ -29,11 +30,21 @@ header img {}
 
 nav {}
 nav button {}
-nav ul {}
+nav ul {
+    display: block;
+    width: 30px;
+    background-color: #577436;
+}
 nav ul li {}
-nav ul li a {}
-nav ul li.active a {}
-nav ul li a:hover {}
+nav ul li a {
+
+}
+nav ul li.active a {
+    color: rgb(183,130,60);
+}
+nav ul li a:hover {
+    color: rgb(255,229,153);
+}
 
 main {}
 main h2 {}
@@ -48,15 +59,15 @@ section {
 
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  width: 200px;
-  margin: 3em;
+  width: 100px;
+  margin: 2em;
 }
 
 footer {
-    background-color: rgb(231,36,47);
+    background-color: rgb(13,78,96 );
 }
 footer aside {
-    background-color: rgb(252,79,93 );
+    background-color: rgb(19,118,146);
 }
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
