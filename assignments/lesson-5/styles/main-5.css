@@ -12,9 +12,8 @@ header, nav, main, footer {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-header {
-        background-color: rgb(231,36,47);
-}
+header {}
+
 header h1, .subheading {
     font-family: Arial, Helvetica, sans-serif;
     font-color: rgb(13,112,85);
@@ -43,7 +42,9 @@ article p.town-article img {  /* This structure refers to img elements that are 
   margin: ???;
 }
 
-footer {}
+footer {
+    background-color: rgb(231,36,47);
+}
 footer aside {}
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
