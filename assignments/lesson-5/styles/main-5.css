@@ -12,15 +12,20 @@ header, nav, main, footer {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-header {}
+header {
+    background-color: rgb(231,36,47);
+}
 
-header h1, .subheading {
+header h1,  {
     font-family: Arial, Helvetica, sans-serif;
-    font-color: rgb(13,112,85);
+    color: rgb(13,112,85);
+    margin: auto;
+    
 }
-header img {
-    float: left;
+header .subheading {
+    
 }
+header img {}
 
 nav {}
 nav button {}
@@ -35,17 +40,24 @@ main h2 {}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { width: 100%; }
 
-section {}
+section {
+    Background-color: rgb(168,208,141);
+    
+}
+
+
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  width: ???; /* fill the page in the small/phone view */
-  margin: ???;
+  width: 200px;
+  margin: 3em;
 }
 
 footer {
     background-color: rgb(231,36,47);
 }
-footer aside {}
+footer aside {
+    background-color: rgb(252,79,93 );
+}
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */
