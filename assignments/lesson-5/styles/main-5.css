@@ -57,7 +57,7 @@ section {
     Background-color: rgb(168,208,141);
     
 }
-section .forecast {
+section.forecast {
     font-size: 12px;
 }
 
