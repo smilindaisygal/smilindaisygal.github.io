@@ -33,12 +33,11 @@ header img {
 nav {}
 nav button {}
 nav ul {}
-nav ul li {
+nav ul li {}
+nav ul li a {
     display: block;
     width: 30px;
     background-color: #577436;
-}
-nav ul li a {
 
 }
 nav ul li.active a {
@@ -58,7 +57,7 @@ section {
     
 }
 section.forecast {
-    font-size: 5px;
+    font-size: 3px;
 }
 
 
