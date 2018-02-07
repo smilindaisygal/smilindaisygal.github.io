@@ -57,9 +57,8 @@ section {
     
 }
 section.forecast {
-    font-size: 3px;
-}
-
+    font-size: 6px;
+}  
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within
     artcle elements */
