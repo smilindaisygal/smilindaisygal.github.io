@@ -26,7 +26,9 @@ header h1,  {
 header .subheading {
     
 }
-header img {}
+header img {
+    width: 100px;
+}
 
 nav {}
 nav button {}
@@ -55,7 +57,9 @@ section {
     Background-color: rgb(168,208,141);
     
 }
-
+section .forecast {
+    font-size: 12px;
+}
 
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
