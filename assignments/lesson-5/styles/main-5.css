@@ -32,12 +32,12 @@ header img {
 
 nav {}
 nav button {}
-nav ul {
+nav ul {}
+nav ul li {
     display: block;
     width: 30px;
     background-color: #577436;
 }
-nav ul li {}
 nav ul li a {
 
 }
