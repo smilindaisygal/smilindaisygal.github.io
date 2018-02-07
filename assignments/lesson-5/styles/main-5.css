@@ -15,20 +15,20 @@ header, nav, main, footer {
 
 header {
     background-color: rgb(107, 199, 46);
+    padding: 1em 0 1em 0;   
 }
 
 header h1,  {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(13,112,85);
-    margin: auto;
+    
     
 }
-header .subheading {
-    
-}
+header h3, { 
+    }
 header img {
-    width: 100px; 
-    height: 100px;
+    width: 150px;
+    height: 150px;   
 }
 
 nav {}
@@ -61,7 +61,7 @@ main figure img { width: 100%; }
 
 section {
     Background-color: rgb(168,208,141);
-    
+    padding: 1em 0 1em 0;
 }
 section.forecast {
     text-align: center;
@@ -70,7 +70,9 @@ section.forecast {
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within
     artcle elements */
        float: right;
-  
+       padding: 8px 16px;
+       height: 175px;
+       width: 75px;
 }
 
 footer {
