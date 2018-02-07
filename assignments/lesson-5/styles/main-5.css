@@ -21,11 +21,8 @@ header {
 header h1,  {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(13,112,85);
-    
-    
 }
-header h3, { 
-    }
+
 header img {
     width: 150px;
     height: 150px;   
@@ -40,7 +37,7 @@ nav ul {
     width: 200px;
     background-color:rgb(168,208,141) ;
 }
-nav ul li {}   
+
 nav ul li a {
     display: block;
     color: #000;
@@ -60,12 +57,16 @@ main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { width: 100%; }
 
 section {
-    Background-color: rgb(168,208,141);
+    background-color: rgb(168,208,141);
     padding: 1em 0 1em 0;
 }
 section.forecast {
     text-align: center;
-}  
+}
+
+table {
+    margin: auto;
+}
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within
     artcle elements */
