@@ -63,8 +63,8 @@ section .forecast {
 
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  width: 100px;
-  margin: 2em;
+  width: 200px;
+  margin: .5em;
 }
 
 footer {
