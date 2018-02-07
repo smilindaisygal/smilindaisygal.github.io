@@ -8,13 +8,13 @@ body {
 }
 
 header, nav, main, footer { 
-    max-width: 40%;
+    max-width: 75%;
     font-family: Helvetica, Arial, sans-serif;
     text-align:center;
 }
 
 header {
-    background-color: rgb(13,78,96 );
+    background-color: rgb(52, 116, 10);
 }
 
 header h1,  {
@@ -27,7 +27,8 @@ header .subheading {
     
 }
 header img {
-    width: 100px;
+    width: 100px; 
+    height: 100px;
 }
 
 nav {}
@@ -36,12 +37,14 @@ nav ul {}
 nav ul li {}
 nav ul li a {
     display: block;
-    width: 30px;
-    background-color: #577436;
+    width: 100px;
+    background-color: rgb(168,208,141);
     border-bottom: 1px solid rgb(12, 12, 12);
+    text-align: center;
+  
 }
 nav ul li.active a {
-    color: rgb(243, 199, 142);
+    color: rgb(245, 146, 18);
 }
 nav ul li a:hover {
     color: rgb(136, 73, 15);
@@ -57,19 +60,19 @@ section {
     
 }
 section.forecast {
-    font-size: 6px;
+    text-align: center;
 }  
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within
     artcle elements */
-  width: 200px;
-  }
+  width: 100px;
+}
 
 footer {
-    background-color: rgb(13,78,96 );
+    background-color: rgb(52, 116, 10);
 }
 footer aside {
-    background-color: rgb(19,118,146);
+    background-color: rgb(168,208,141);
 }
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
