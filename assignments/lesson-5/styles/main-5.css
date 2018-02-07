@@ -41,7 +41,7 @@ nav ul li a {
 
 }
 nav ul li.active a {
-    color: rgb(183,130,60);
+    color: rgb(243, 199, 142);
 }
 nav ul li a:hover {
     color: rgb(136, 73, 15);
