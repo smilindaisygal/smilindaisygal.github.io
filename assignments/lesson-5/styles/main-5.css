@@ -62,10 +62,10 @@ section .forecast {
 }
 
 
-article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within
+    artcle elements */
   width: 200px;
-  margin: .5em;
-}
+  }
 
 footer {
     background-color: rgb(13,78,96 );
