@@ -1,18 +1,40 @@
 @media only screen and (min-width: 37.5em) {
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
-  nav {
-    text-align: center;
+  body {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
   }
-  
+
+  header img {
+    width: 250px;
+    height: 250px;  
+    float: left; 
+    margin-left: 16px;
+}
+   
   nav ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
+div.highlow {
+    float: right;
+    margin-right: 20px;
+}
+
+div.conditions {
+    float: right;
+    margin-right: 20px;
+}
+
+div.current {
+    Float: left;
+    margin-left: 20px;
+}
+
  nav li {
-    float: left;
+    float: center;
 }
 
   nav li a {
@@ -21,16 +43,26 @@
     background-color: rgb(168,208,141);
 }
 
+figure img {
+    margin: 1em 1em 1em 1em;
+}
+
+section {
+    background-color: rgb(168,208,141);
+    padding: 1em 0 0em 0;
+}
+
 section.forecast {
     text-align: center;
     display:inline;
-    font-size: 50px;
+    font-size: 30px;
+    background-color: rgb(168,208,141);
 }
 
 table {
     margin: auto;
     display:inline;
-    font-size: 30px;
+    background-color: rgb(168,208,141);
 }
  
   nav button { display: none; }  /* hamburger button does not need to be shown */
