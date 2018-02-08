@@ -62,20 +62,18 @@ section {
 }
 section.forecast {
     text-align: center;
+    display:none;
+}
+
+table {
+    margin: auto;
+    display:none;
 }
 
 section.current img{
     padding: 8px 16px;
     height: 175px;
     width: 75px;
-}
-
-section.forecast {
-    display:hidden;
-}
-table {
-    margin: auto;
-    display:hidden;
 }
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within
