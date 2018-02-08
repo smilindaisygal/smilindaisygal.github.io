@@ -71,11 +71,11 @@ section.current img{
 }
 
 section.forecast {
-    display:none;
+    display:hidden;
 }
 table {
     margin: auto;
-    display:none;
+    display:hidden;
 }
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within

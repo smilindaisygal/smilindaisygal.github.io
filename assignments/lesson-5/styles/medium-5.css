@@ -9,26 +9,28 @@
 
  nav li {
     float: left;
-  }
+}
 
-  nav li a{
+  nav li a {
     display: block;
     padding: 8px;
     background-color: rgb(168,208,141);
-  }
-
-  section.forecast {
-    margin: auto;
 }
+
+section.forecast {
+    text-align: center;
+    display:block !important;
+}
+
 table {
     margin: auto;
-    
+    display:block !important;
 }
-
-  nav button { display:none; }  /* hamburger button does not need to be shown */
+ 
+  nav button { display: none; }  /* hamburger button does not need to be shown */
   
   section.forecast { display: auto; }  /* show the 10-day forecast with the medium view and up */
   
-  article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+  article p.town-article img { width: 62.666%; float: right; }  /* responsive images */
 
 }
