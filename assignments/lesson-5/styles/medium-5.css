@@ -19,12 +19,12 @@
 
 section.forecast {
     text-align: center;
-    display:block !important;
+    display:inline;
 }
 
 table {
     margin: auto;
-    display:block !important;
+    display:inline;
 }
  
   nav button { display: none; }  /* hamburger button does not need to be shown */
