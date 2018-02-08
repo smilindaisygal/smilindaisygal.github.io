@@ -1,5 +1,9 @@
 @media only screen and (min-width: 37.5em) {
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  nav {
+    text-align: center;
+  }
+  
   nav ul {
     list-style-type: none;
     margin: 0;
@@ -20,11 +24,13 @@
 section.forecast {
     text-align: center;
     display:inline;
+    font-size: 50px;
 }
 
 table {
     margin: auto;
     display:inline;
+    font-size: 30px;
 }
  
   nav button { display: none; }  /* hamburger button does not need to be shown */
