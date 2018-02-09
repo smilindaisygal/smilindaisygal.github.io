@@ -9,7 +9,7 @@
     width: 200px;
     height: 200px;  
     float: left; 
-    margin-left: 16px;
+    margin: 16px;
 }
   nav {}
    
@@ -42,7 +42,7 @@ figure img {
 
 section {
     background-color: rgb(168,208,141);
-    border: 40px;
+    border: 70px;
 }
 
 section.highlow .conditions{
