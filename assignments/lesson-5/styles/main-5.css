@@ -76,14 +76,7 @@ table {
     display:none;
 }
 
-section.current {
-    padding: 8px 16px;
-    height: 175px;
-    width: 75px;
-}
-
-section.current1 {
-    display: none;
+section.current img{
     padding: 8px 16px;
     height: 175px;
     width: 75px;

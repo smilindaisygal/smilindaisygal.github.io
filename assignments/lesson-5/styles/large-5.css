@@ -3,14 +3,3 @@
   
   article p.town-article img { width: 29.333%; }
 }
-
-section div.current {
-    display: auto;
-    float: left;
-    margin: 0px 150px 250px 0px;
-}
-
-section.highlow .conditions{
-    float: center;
-    margin: 0px 0px 0px 250px;
-}

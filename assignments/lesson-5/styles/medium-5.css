@@ -45,10 +45,6 @@ section div.current {
     margin: 0px 150px 250px 0px;
 }
 
-section div.current1 {
-    display: none;
-}
-
 section.forecast {
     text-align: center;
     display:inline;
