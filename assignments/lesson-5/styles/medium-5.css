@@ -6,23 +6,30 @@
   }
 
   header img {
-    width: 250px;
-    height: 250px;  
+    width: 200px;
+    height: 200px;  
     float: left; 
     margin-left: 16px;
 }
    
   nav ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(168,208,141);
 }    
 
  nav li {
-    float: center;
+    float: left;
 }
 
   nav li a {
-    display: inline;
-    background-color: rgb(168,208,141);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 figure img {
@@ -39,11 +46,11 @@ section {
 
 section.highlow .conditions{
     float: left;
-    margin: 0px 0px 0px 250px;
+    margin: 0px 0px 0px 200px;
 }
 section div.current {
     Float: right;
-    margin: 0px 150px 150px 0px;
+    margin: 0px 200px 200px 0px;
 }
 
 section.forecast {
