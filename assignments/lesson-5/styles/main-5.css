@@ -69,12 +69,12 @@ section {
 }
 section.forecast {
     text-align: center;
-    display: none;
+    display: none !important;
 }
 
 table {
     margin: auto;
-    display:none;
+    display:none!important;
 }
 
 section.current img{
