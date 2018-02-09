@@ -55,26 +55,18 @@ section div.current {
 }
 
 section.forecast {
-    text-align: center;
+   border-inline-end: center;
     display: inline!important;
     font-size: 20px;
     background-color: rgb(168,208,141);
 }
-table, td, th {
-    border: 1px solid black;
-    display: inline!important;
-    background-color: rgb(168,208,141);
-}
 
 table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th {
-    text-align: center;
-}
-
+    border-inline-end: center;
+    margin: auto;
+    display: inline!important;
+    background-color: rgb(168,208,141);
+    }
  
   nav button { display: none; }  /* hamburger button does not need to be shown */
   
