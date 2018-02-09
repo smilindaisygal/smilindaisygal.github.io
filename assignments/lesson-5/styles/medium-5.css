@@ -38,10 +38,12 @@ figure img {
 
 section {
     background-color: rgb(168,208,141);
-    padding-left: 30px;
-    padding-right: 30px;
 }
 
+section.highlow .conditions{
+    float: left;
+    margin: 0px 0px 0px 250px;
+}
 section div.current {
     Float: right;
     margin: 0px 250px 200px 0px;
