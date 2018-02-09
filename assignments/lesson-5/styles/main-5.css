@@ -48,7 +48,7 @@ nav ul li a {
     padding: 8px 16px;
     text-decoration: none;
     text-align: 0 auto;
-    
+
 }
 nav ul li.active a {
     color: rgb(245, 146, 18);
@@ -76,10 +76,14 @@ table {
     display:none;
 }
 
-section.current img{
+section.current {
     padding: 8px 16px;
     height: 175px;
     width: 75px;
+}
+
+section.current1 {
+    display: none;
 }
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within

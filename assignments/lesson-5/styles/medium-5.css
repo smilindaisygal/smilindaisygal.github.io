@@ -12,14 +12,18 @@
     margin-left: 16px;
 }
    
-  nav ul {}
-       
+  nav ul {
+    list-style-type: none;
+}    
 
  nav li {
-   display: inline;
+    float: center;
 }
 
-  nav li a {}
+  nav li a {
+    display: inline;
+    background-color: rgb(168,208,141);
+}
 
 figure img {
     width: 300px;
@@ -38,7 +42,11 @@ section.highlow .conditions{
 }
 section div.current {
     Float: right;
-    margin: 0px 150px 150px 0px;
+    margin: 0px 150px 250px 0px;
+}
+
+section div.current1 {
+    display: none;
 }
 
 section.forecast {
@@ -49,6 +57,13 @@ section.forecast {
     background-color: rgb(168,208,141);
 }
 
+section table {
+    margin: auto;
+    display:inline;
+    background-color: rgb(168,208,141);
+    text-align: center;
+}
+ 
   nav button { display: none; }  /* hamburger button does not need to be shown */
   
   article p.town-article img { width: 62.666%; float: right; }  /* responsive images */
