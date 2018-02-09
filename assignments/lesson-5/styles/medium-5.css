@@ -60,13 +60,21 @@ section.forecast {
     font-size: 20px;
     background-color: rgb(168,208,141);
 }
-
-table {
-    margin: auto;
+table, td, th {
+    border: 1px solid black;
     display: inline!important;
     background-color: rgb(168,208,141);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
     text-align: center;
 }
+
  
   nav button { display: none; }  /* hamburger button does not need to be shown */
   
