@@ -84,6 +84,9 @@ section.current {
 
 section.current1 {
     display: none;
+    padding: 8px 16px;
+    height: 175px;
+    width: 75px;
 }
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within

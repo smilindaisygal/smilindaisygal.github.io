@@ -5,7 +5,8 @@
 }
 
 section div.current {
-    display: inline;
+    display: auto;
+    float: left;
     margin: 0px 150px 250px 0px;
 }
 
