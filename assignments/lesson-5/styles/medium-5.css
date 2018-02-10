@@ -15,24 +15,15 @@
   nav {}
    
   nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    text-align: center;
     background-color: rgb(168,208,141);
 }    
 
  nav li {
-    float: left;
+    display: inline-block;
 }
 
-  nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+ 
 
 figure img {
     width: 200px;
@@ -58,21 +49,19 @@ section.conditions{
 
 section div.current {
     Float: right;
-    margin: 0px 200px 200px 0px;
+    margin-right: 400px;
+    margin-bottom: 200px;
 }
 
-section.forecast {
-    width:70%; 
-    margin-left:15%; 
-    margin-right:15%;
+section#forecast {
+    text-align: center;
     display: inline!important;
     background-color: rgb(168,208,141);
 }
 
 table {
-    width:70%; 
-    margin-left:15%; 
-    margin-right:15%;
+    display: table;
+    margin: 0 auto;
     display: inline!important;
     background-color: rgb(168,208,141);
     }
