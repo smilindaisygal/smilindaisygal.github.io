@@ -91,6 +91,7 @@ footer {
 
 footer aside {
     background-color: rgb(168,208,141);
+    padding: 1em 0 1em 0;
 }
 
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
