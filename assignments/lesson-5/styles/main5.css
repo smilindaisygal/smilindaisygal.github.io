@@ -74,8 +74,8 @@ section {
     padding: 1em 0 1em 0;
 }
 
-section .forecast{
-    display: none !important;
+.forecast {
+    display: none;
 }
 
 article p.town-article img {
