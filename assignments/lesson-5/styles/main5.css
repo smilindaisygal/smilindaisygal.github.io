@@ -75,7 +75,7 @@ section {
 }
 
 section .forecast{
-    display: none;
+    display: none !important;
 }
 
 article p.town-article img {
