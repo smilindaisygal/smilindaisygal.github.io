@@ -63,10 +63,11 @@ nav ul li a:hover {
     color: rgb(136, 73, 15);
 }
 
+
 main {}
 main h2 {}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img { width: 100%; }
+main figure img { width: 100%; }*/
 
 section {
     background-color: rgb(168,208,141);
@@ -75,16 +76,16 @@ section {
 article p.town-article img {
     float: right;
     padding: 8px 16px;
-}*/
+}
 
 footer {
     background-color: rgb(52, 116, 10);
     font-size: 13px;
+    padding: 1em 0 1em 0;
 }
 
 footer aside {
     background-color: rgb(168,208,141);
-    margin: 1em 0 1em 0;
 }
 
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
