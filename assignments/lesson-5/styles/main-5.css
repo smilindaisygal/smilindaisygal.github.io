@@ -3,15 +3,15 @@
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
  
 }
 
 header, nav, main, footer { 
     max-width: 100%;
-    font-family: Helvetica, Arial, sans-serif;
-    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 header {
@@ -30,17 +30,18 @@ header img {
 }
 
 nav {
-    Text-align: center;
+    text-align: center;
     padding: 70px 0;
 }
 nav button {}
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color:rgb(168,208,141) ;
-    text-align:center;
+    background-color:rgb(168,208,141);
+    text-align: center;
 }
 
 nav ul li a {
@@ -74,7 +75,7 @@ section.forecast {
 
 table {
     margin: auto;
-    display:none!important;
+    display: none !important;
 }
 
 section.current img{
