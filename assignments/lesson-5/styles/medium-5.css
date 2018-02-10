@@ -46,10 +46,16 @@ section {
     border: 70px;
 }
 
-section.highlow .conditions{
+section.highlow {
     float: left;
     margin: 0px 0px 0px 200px;
 }
+
+section.conditions{
+    float: left;
+    margin: 0px 0px 0px 200px;
+}
+
 section div.current {
     Float: right;
     margin: 0px 200px 200px 0px;
