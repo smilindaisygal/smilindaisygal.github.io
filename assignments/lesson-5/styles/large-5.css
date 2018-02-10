@@ -40,3 +40,13 @@ table {
     background-color: rgb(168,208,141);
     text-align: center;
 }
+
+section div.current {
+    Float: right;
+    margin: 0px 300px 300px 0px;
+}
+
+section.conditions{
+    float: left;
+    margin: 0px 0px 0px 200px;
+}
