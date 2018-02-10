@@ -79,10 +79,12 @@ article p.town-article img {
 
 footer {
     background-color: rgb(52, 116, 10);
+    font-size: 13px;
 }
 
 footer aside {
     background-color: rgb(168,208,141);
+    margin: 1em 0 1em 0;
 }
 
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
