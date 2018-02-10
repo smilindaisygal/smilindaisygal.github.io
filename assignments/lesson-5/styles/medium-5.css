@@ -1,78 +1,50 @@
 @media only screen and (min-width: 37.5em) {
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
-  body {
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-  }  
+  
+  button { display:none; }  /* hamburger button does not need to be shown */
+  
+  section.forecast { display: inline; }  /* show the 10-day forecast with the medium view and up */
+  
+  article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
 
-  header img {
-    width: 100px;
-    height: 100px;  
-    float: left; 
-    margin: 16px;
-}
-  nav {}
-   
-  nav ul {
-    text-align: center;
-    background-color: rgb(168,208,141);
-}    
-
- nav li {
-    display: inline-block;
+ul {
+    float: top;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
 }
 
- 
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
 
 figure img {
-    width: 200px;
-    height: 300px;
-    text-align:center;
-    border-bottom-right-radius: 50px;
+    width: 408px;
+    height: 272px;
 }
 
-section {
-    background-color: rgb(168,208,141);
-    border: 70px;
-}
-
-section.highlow {
-    float: left;
-    margin: 0px 0px 0px 200px;
-}
-
-section.conditions{
-    float: left;
-    margin: 0px 0px 0px 200px;
-}
-
-section div.current {
-    float: right;
-    margin-right: 400px;
-    margin-bottom: 200px;
-}
-
-section#forecast {
-    text-align: center;
-    display: inline!important;
-    background-color: rgb(168,208,141);
-}
 
 table {
-    display: table;
-    margin: 0 auto;
-    display: inline!important;
-    background-color: rgb(168,208,141);
-    }
- 
-  nav button { display: none; }  /* hamburger button does not need to be shown */
-  
-  article p.town-article img {
-    float: right;
-    padding: 8px 16px;
-    height: 225px;
-    width: 200px;} 
-
-
-  }
+    margin: auto;
+}
+}
