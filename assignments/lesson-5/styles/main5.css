@@ -73,6 +73,10 @@ section {
     background-color: rgb(168,208,141);
 }
 
+section .forecast{
+    display: none;
+}
+
 article p.town-article img {
     float: right;
     padding: 8px 16px;
