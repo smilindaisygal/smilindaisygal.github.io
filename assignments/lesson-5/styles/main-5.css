@@ -79,9 +79,9 @@ table {
 }
 
 section.current img{
-    padding: 8px 16px;
-    height: 175px;
-    width: 75px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within
