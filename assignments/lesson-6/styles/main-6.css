@@ -1,0 +1,103 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+header, nav, main, footer { 
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: rgb(107, 199, 46);
+    padding: 3em 0 1em 0;
+}
+
+header h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(13,112,85);
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color:rgb(195, 209, 186);
+    margin: auto;
+}
+
+nav ul li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none; 
+}
+
+nav ul li.active a {
+   background-color:  #4CAF50;
+   color: white;
+}
+
+nav ul li a:hover {
+   background-color: rgb(136, 73, 15);
+   color: white;
+}
+
+/*
+main {}
+main h2 {}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { width: 100%; }*/
+
+section {
+    background-color: rgb(168,208,141);
+    padding: 1em 0 1em 0;
+}
+
+.forecast {
+    display: none;
+}
+
+.town-article {
+    float: left;
+    margin-bottom: 1.5em;
+}
+
+article p {
+    text-align: left;
+    margin: 0 3em 0 3em;
+}
+
+article img {
+    margin-bottom: 1.5em;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+footer {
+    background-color:rgb(52, 116, 10);
+    font-size: 13px;
+    padding: 0 0 1em 0;
+}
+
+footer aside {
+    background-color: rgb(168,208,141);
+    padding: 1em 0 1em 0;
+}
+
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
