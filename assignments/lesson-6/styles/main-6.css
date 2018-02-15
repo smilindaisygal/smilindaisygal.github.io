@@ -1,15 +1,17 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
-* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+* { 
+    box-sizing: border-box;
+}  
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
 }
 
 header, nav, main, footer { 
     max-width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
 }
 
@@ -19,13 +21,12 @@ header {
 }
 
 header h1 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'BioRhyme Expanded', serif;
     color: rgb(13,112,85);
 }
 
-.franklin{
-    float: left;
-    margin: 2em 0 2em 0;
+h2, h3, h4, h5, h6{
+    font-family: 'BioRhyme Expanded', serif;
 }
 
 header img {
@@ -33,37 +34,49 @@ header img {
     height: 150px;
 }
 
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color:rgb(24, 53, 6);
-    margin: auto;
-}
-
-nav ul li a {
+.hamburger { 
     display: block;
-    color: rgb(93, 153, 24);
-    padding: 8px 16px;
-    text-decoration: none; 
+    position: absolute;
+    top: 2.0rem;
+    right: 1.25rem;
 }
 
-nav ul li.active a {
-   background-color:  #4CAF50;
-   color: white;
+.navigation { 
+    list-style: none;
+     padding-left: 0; 
 }
 
-nav ul li a:hover {
-   background-color: rgb(136, 73, 15);
+.navigation li { 
+    display: none;
 }
 
-/*
-main {}
-main h2 {}
-main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img { width: 100%; }*/
+.navigation.responsive {
+     position: relative;
+}
+
+.navigation.responsive li { 
+    font-family: 'Source Sans Pro', sans-serif; 
+    background-color:rgb(106, 192, 53); 
+    display: block;
+    width: 100%; 
+    margin: 2px 0;
+    border: 1px solid rgb(61, 33, 33); 
+}
+
+.navigation.responsive li a {	
+    padding: 1rem; 
+    text-align: center;	
+    display: block;
+     text-decoration:none; 
+}
+
+.navigation.responsive li.acive a {
+    background-color:rgb(136, 73, 15)
+}
+
+.navigation.responsive li a:hover { 
+    background-color:  rgb(236, 224, 55) 
+}
 
 section {
     background-color: rgb(168,208,141);
@@ -97,11 +110,12 @@ footer {
     padding: 0 0 1em 0;
 }
 
+footer.franklin{
+    width: 50%;
+}
+
 footer aside {
     background-color: rgb(168,208,141);
     padding: 1em 0 1em 0;
 }
 
-footer>p {} /* This structure refers to p elements that are direct children of the footer element */
-
-/* Other Class Selectors */

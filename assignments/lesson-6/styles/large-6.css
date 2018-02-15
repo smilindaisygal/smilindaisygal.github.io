@@ -3,9 +3,19 @@
   
   article p.town-article img { width: 29.333%; }
 
-  figure img {
+   figure img {
     width: 612px;
     height: 408px;
 }
-  
+
+section{
+    margin-left: 170px;
+    margin-right:170px;
+}
+
+  .franklin{
+    width: 75%;
+   }
+
+   
 }

@@ -1,43 +1,46 @@
 @media only screen and (min-width: 37.5em) {
-  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
-  
-  button { display:none; }  /* hamburger button does not need to be shown */
-  
-  section.forecast { display: inline; }  /* show the 10-day forecast with the medium view and up */
-  
-  article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+   
+button { 
+    display:none; 
+}  
 
-ul {
-    float: top;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border: 1px solid #e7e7e7;
-    background-color: #f3f3f3;
+section.forecast { 
+    display: inline; 
+} 
+  
+article p.town-article img {
+     width: 62.666%; float:right; 
+}  
+
+.hamburger { 
+    display: none;
+}
+  
+.navigation {	
+    background-color: rgb(106, 192, 53);	
+    overflow: hidden;	
+    text-align: center;	
 }
 
-li {
-    float: left;
+.navigation li { 
+    display: inline-block;
+    margin-left: .25rem; 
 }
 
-li a {
-    display: block;
-    color: #666;
+.navigation a {
+    display: block;	
+    color: rgb(255, 248, 248);	
+    padding: .5rem;	
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
-    background-color: #ddd;
+.navigation li a:hover:not(.active) {	
+    color: rgb(10, 10, 10); 
+     background-color: 
+     rgb(252, 189, 18);	
 }
-
-li a.active {
-    color: white;
-    background-color: #4CAF50;
-}
-
+ 
 figure img {
     width: 408px;
     height: 272px;
@@ -47,4 +50,9 @@ figure img {
 table {
     margin: auto;
 }
+
+.franklin img{
+    width: 85%;
+}
+
 }
