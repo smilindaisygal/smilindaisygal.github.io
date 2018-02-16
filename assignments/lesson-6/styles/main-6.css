@@ -110,12 +110,22 @@ footer {
     padding: 0 0 1em 0;
 }
 
-footer.franklin{
+footer figure.franklin{
     width: 50%;
+    margin: 0 25% 0 25%;
+}
+
+
+footer figure.franklin img{
+    width: 100%;
 }
 
 footer aside {
     background-color: rgb(168,208,141);
     padding: 1em 0 1em 0;
+}
+
+footer span.currentdate {
+    display: none;
 }
 
