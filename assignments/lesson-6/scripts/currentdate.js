@@ -1,4 +1,4 @@
-function currentdate() {
+
 var weekday = new Array(7);
 
 weekday[0] = "Sunday";
@@ -60,6 +60,3 @@ var fullDate = dweekday + ", " + ddate + " " + dmonth + " " + dyear;
 
 
 document.getElementById("currentdate").innerHTML = fullDate;
-}
-
-
