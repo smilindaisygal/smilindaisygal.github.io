@@ -1,4 +1,3 @@
-
 var weekday = new Array(7);
 
 weekday[0] = "Sunday";
