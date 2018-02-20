@@ -1,0 +1,126 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { 
+    box-sizing: border-box;
+}  
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+}
+
+header, nav, main, footer { 
+    max-width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: rgb(107, 199, 46);
+    padding: 3em 0 1em 0;
+}
+
+header h1 {
+    font-family: 'BioRhyme Expanded', serif;
+    color: rgb(13,112,85);
+}
+
+h2, h3, h4, h5, h6{
+    font-family: 'BioRhyme Expanded', serif;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+}
+
+.hamburger { 
+    display: block;
+    position: absolute;
+    top: 2.0rem;
+    right: 1.25rem;
+}
+
+.navigation { 
+    list-style: none;
+     padding-left: 0; 
+}
+
+.navigation li { 
+    display: none;
+}
+
+.navigation.responsive {
+     position: relative;
+}
+
+.navigation.responsive li { 
+    font-family: 'Source Sans Pro', sans-serif; 
+    background-color:rgb(106, 192, 53); 
+    display: block;
+    width: 100%; 
+    margin: 2px 0;
+    border: 1px solid rgb(61, 33, 33); 
+}
+
+.navigation.responsive li a {	
+    padding: 1rem; 
+    text-align: center;	
+    display: block;
+     text-decoration:none; 
+}
+
+.navigation.responsive li.acive a {
+    background-color:rgb(136, 73, 15)
+}
+
+.navigation.responsive li a:hover { 
+    background-color:  rgb(236, 224, 55) 
+}
+
+section {
+    background-color: rgb(168,208,141);
+    padding: 1em 0 1em 0;
+}
+
+.forecast {
+    display: none;
+}
+
+.town-article {
+    float: left;
+    margin-bottom: 1.5em;
+}
+
+article p {
+    text-align: left;
+    margin: 0 3em 0 3em;
+}
+
+article img {
+    margin-bottom: 1.5em;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+footer {
+    background-color:rgb(52, 116, 10);
+    font-size: 13px;
+    padding: 0 0 1em 0;
+}
+
+footer figure.franklin{
+    width: 50%;
+    margin: 0 25% 0 25%;
+}
+
+
+footer figure.franklin img{
+    width: 100%;
+}
+
+footer aside {
+    background-color: rgb(168,208,141);
+    padding: 1em 0 1em 0;
+}
