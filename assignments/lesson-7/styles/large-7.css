@@ -13,5 +13,14 @@ section{
     margin-right:170px;
 }
 
-  
+figure.grid {
+  margin:.5rem;
+}
+
+img {
+  margin-right: 1rem;
+}
+/* hover effect - not anchor tags around images */
+img:hover {box-shadow: 5px 5px 10px gray;}
+}  
 }

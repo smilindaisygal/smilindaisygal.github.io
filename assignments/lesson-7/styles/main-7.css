@@ -35,15 +35,15 @@ header img {
 }
 
 .hamburger { 
-    display: block;
+    display: flex;
     position: absolute;
     top: 2.0rem;
     right: 1.25rem;
 }
 
-.navigation { 
+.navigation a { 
     list-style: none;
-     padding-left: 0; 
+    color: rgb(255, 248, 248);    
 }
 
 .navigation li { 
@@ -56,26 +56,55 @@ header img {
 
 .navigation.responsive li { 
     font-family: 'Source Sans Pro', sans-serif; 
-    background-color:rgb(106, 192, 53); 
-    display: block;
+    background-color:rgb(68, 136, 25); 
+    display: flex;
+    Flex-direction: column;
     width: 100%; 
     margin: 2px 0;
-    border: 1px solid rgb(61, 33, 33); 
+    border: 1px solid black; 
 }
 
 .navigation.responsive li a {	
     padding: 1rem; 
     text-align: center;	
-    display: block;
-     text-decoration:none; 
+    display: flex;
+    flex: 1 1 100%;
+    text-decoration:none; 
 }
 
-.navigation.responsive li.acive a {
-    background-color:rgb(136, 73, 15)
+.navigation.responsive li a.acive {
+    background-color: rgb(240, 172, 109)
 }
 
-.navigation.responsive li a:hover { 
+.navigation.responsive li a:hover:not(.active) { 
     background-color:  rgb(236, 224, 55) 
+}
+
+figure.grid {
+    list-style: none;
+  margin: 2em;
+  display: grid;
+  grid-gap: 20px;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill,minmax(200px, 1fr)); 
+}
+
+figure img.img {
+    border: 1px solid #ffe066;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+figure figcation.cap {
+    margin-top: auto;
+    border-top: 1px solid #ffe066;
+    padding: 10px;
+    text-align: center;
+}
+figure img.img {
+    width: 200px;
+    height: 150px;
 }
 
 section {
@@ -88,7 +117,8 @@ section {
 }
 
 .town-article {
-    float: left;
+    display: Flex;
+    flex-direction: row;
     margin-bottom: 1.5em;
 }
 

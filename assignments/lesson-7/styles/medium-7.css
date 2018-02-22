@@ -5,7 +5,9 @@ button {
 }  
 
 section.forecast { 
-    display: inline; 
+    display: flex; 
+    flex-direction: column;
+    background-color: rgb(92, 165, 43)
 } 
   
 article p.town-article img {
@@ -17,18 +19,21 @@ article p.town-article img {
 }
   
 .navigation {	
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     background-color: rgb(47, 90, 21);	
     overflow: hidden;	
     text-align: center;	
 }
 
 .navigation li { 
-    display: inline-block;
+    display: flex;
     margin-left: .25rem; 
 }
 
 .navigation a {
-    display: block;	
+    display: flex;	
     color: rgb(255, 248, 248);	
     padding: .5rem;	
     text-align: center;
@@ -41,6 +46,32 @@ article p.town-article img {
      rgb(252, 189, 18);	
 }
  
+figure.grid {
+    list-style: none;
+  margin: 2em;
+  display: grid;
+  grid-gap: 20px;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill,minmax(200px, 1fr)); 
+}
+
+figure img.img {
+    border: 1px solid #ffe066;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+figure figcation.cap {
+    margin-top: auto;
+    border-top: 1px solid #ffe066;
+    padding: 10px;
+    text-align: center;
+}
+figure img.img {
+    width: 200px;
+    height: 150px;
+}
 figure img {
     width: 408px;
     height: 272px;
