@@ -1,13 +1,8 @@
 
-var tempF = parsefloat(document.getElementById('Temp').innerHTML);
-var speed = parsefloat(document.getElementById('speed').innerHTML);
-var chill = windChill(tempF, speed);
+var high = parseFloat(document.getElementById('high').innerHTML);
+var low = parseFloat(document.getElementById('low').innerHTML);
+var tempF = (high+low) / 2;
+var speed = parseFloat(document.getElementById('speed').innerHTML);
+var chill = Math.round(35.74 + (0.6215 * tempF) - (35.75 * Math.pow(speed, .16)) + (0.4275 * tempF * Math.pow(speed, .16)));
 
-
-
-function windChill(tempF, speed){
-    var wind = 35.74 + (0.6215 * tempF) - (35.75 * Math.pow(speed, .16)) + (0.4275 * tempF * Math.pow(speed, .16));
-    return wind;}
-
-
-    document.getElementById("windChill").innerHTML = chill; 
+document.getElementById("windchill").innerHTML = chill;
