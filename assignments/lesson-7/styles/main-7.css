@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 header, nav, main, footer { 
@@ -44,7 +44,7 @@ header img {
 
 .navigation a { 
     list-style: none;
-    color: rgb(255, 248, 248);    
+    color: rgb(255, 248, 248);   
 }
 
 .navigation li { 
