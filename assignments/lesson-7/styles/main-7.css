@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 header, nav, main, footer { 
@@ -23,6 +23,7 @@ header {
 header h1 {
     font-family: 'BioRhyme Expanded', serif;
     color: rgb(13,112,85);
+    font-size-adjust: 23px;
 }
 
 h2, h3, h4, h5, h6{
@@ -110,16 +111,19 @@ figure img.img {
 section {
     background-color: rgb(168,208,141);
     padding: 1em 0 1em 0;
+    font-size: 18px;
 }
 
 .forecast {
     display: none;
+    font-size: 18px;
 }
 
 .town-article {
     display: Flex;
     flex-direction: row;
     margin-bottom: 1.5em;
+    font-size: 16px;
 }
 
 article p {
@@ -135,9 +139,10 @@ article img {
 }
 
 footer {
-    background-color:rgb(52, 116, 10);
+    background-color: rgb(107, 199, 46);
     font-size: 13px;
     padding: 0 0 1em 0;
+    font-size: 14px;
 }
 
 footer aside {
