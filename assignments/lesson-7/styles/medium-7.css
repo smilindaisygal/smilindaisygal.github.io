@@ -30,7 +30,6 @@ article p.town-article img {
 .navigation li { 
     display: flex;
     margin-left: .25rem; 
-    font-size: 14px;
 }
 
 .navigation a {
