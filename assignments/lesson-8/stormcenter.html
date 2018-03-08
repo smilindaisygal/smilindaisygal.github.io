@@ -65,16 +65,14 @@
               <label>Storm Severity</label><input type="range" name="rangeInput" min="1" max="10" size="20" onchange="updateTextInput(this.value);">
               <input type="text" id="textInput" value=""size="1">
               
-              <form>
-                  <h6>Are you in Danger?</h6>
-                  <form action="">
-                      <input type="radio" name="gender" value="male"> Male<br>
-                      <input type="radio" name="gender" value="female"> Female<br>
-                      <input type="radio" name="gender" value="other"> Other
-                    </form>
-              <label for="storm_region">What region is the storm in?</label>
-
-              <select id="storm_region" name="storm_region">
+              
+                  <p>Are you in danger?</P>
+                    <input type="radio" name="answer" value="yes"> Yes<br>
+                    <input type="radio" name="answer" value="maybe"> Maybe<br>
+                    <input type="radio" name="answer" value="no"> No
+              <label for="storm_region">What region is the storm in?</label></p>
+             <form>
+             <select id="storm_region" name="storm_region">
                 <option disabled selected value>-- Select Region --</option>
                 <option value="Franklin">Franklin</option>
                 <option value="Greenville">Greenville</option>
@@ -87,6 +85,7 @@
                 <label>If you have any additional information or comments, please enter text.</label>
                 <textarea name="comment" form="usrform">Enter text here...</textarea><br><br><br>
                 <input type="submit">
+                <input type="hidden" name="redirect" value="thankyou-8.html">
              
           </legend>
       </fieldset>  

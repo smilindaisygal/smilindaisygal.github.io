@@ -171,6 +171,12 @@ label {
     display:inline-block;
 }
 
+#danger{
+    float:left;
+    margin-bottom: 20px;
+    
+}
+
 footer {
     background-color: rgb(107, 199, 46);
     font-size: 13px;
