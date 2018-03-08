@@ -149,6 +149,11 @@ article img {
     border-color: black;
 }
 
+.danger{
+    float:left;
+    margin-bottom: 20px;
+}
+
 
 label {
     width:180px;
