@@ -36,59 +36,48 @@
   </nav>
   <main class="stormform">
       <h2>Storm Form</h2><br>
-        <h4>Please fill this form out for us so that we can have a more personalized view of the weather.</h4><br><br><br>
+        <h4 class="haha">Please fill this form out for us so that we can have a more personalized view of the weather.</h4>
         <!-- <img class="rabbit" src="images/rabbitinwinter.jpg" alt="Rabbit in the snow" width="135" height="240">
         <img class="footprints" src="images/footprintsinsnow.jpg" alt="Animal tracks in the snow" width="143" height="240"><br><br><br><br> -->
+     <form action="thanks.html" method="get">   
       <fieldset>
           <legend>
-              <label>Full Name: </label><input name="fullname" type="text" value="" placeholder="Jonathon Acherman Smith" size="20" required><br><br><br>
-              <label>E-mail: </label><input name="email" type="email" value="" placeholder="john@gmail.com" size="20" required><br><br><br>
-              <label>Phone Number:</label> <input name="phonenumber" type="tel" value="" placeholder="(999)999-9999" size="20" required><br><br><br>
-              <label>Zipcode:</label> <input name="zipcode" type="text" value="" placeholder="83454" size="20" required><br><br><br>
-              <label>Storm Date:</label> <input id="date" type="date" size="20"><br><br><br>
+              <label>Full Name: </label><input name="fullname" type="text" pattern="[a-zA-Z -._]{3,99}" placeholder="Jonathon Acherman Smith" size="20" required>
+              <label>E-mail: </label><input name="email" type="email"  placeholder="john@gmail.com" size="20" required>
+              <label>Phone Number:</label> <input name="phonenumber" type="tel"  placeholder="(999)999-9999" size="20" required>
+              <label>Zipcode:</label> <input name="zipcode" type="text" placeholder="83454" size="20" required>
               <label>Storm type:</label><form action="/action_page.php" method="get">
                 <input list="stormtype" name="storm">
-                <datalist id="stormtype">
-                  <option diabled selected value>-- select storm type --</option>
-                  <option value="Blizzard">
-                  <option value="Hail">
-                  <option value="Hurricane">
-                  <option value="Tornado">
-                  <option value="Flash flood">
-                  <option value="Thunderstorm">
-                  </option>    
-                </datalist>
-                </form>
-              </label>
-
-
+                  <datalist id="stormtype">
+                    <option diabled selected value>-- select storm type --</option>
+                    <option value="Blizzard">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Tornado">
+                    <option value="Flash flood">
+                    <option value="Thunderstorm">
+                    </option>    
+                  </datalist>
               <label>Storm Severity</label><input type="range" name="rangeInput" min="1" max="10" size="20" onchange="updateTextInput(this.value);">
-              <input type="text" id="textInput" value=""size="1">
-              
-              
-                  <p>Are you in danger?</P>
-                    <input type="radio" name="answer" value="yes"> Yes<br>
-                    <input type="radio" name="answer" value="maybe"> Maybe<br>
-                    <input type="radio" name="answer" value="no"> No
+                <input type="text" id="textInput" value=""size="1">
               <label for="storm_region">What region is the storm in?</label></p>
-             <form>
-             <select id="storm_region" name="storm_region">
-                <option disabled selected value>-- Select Region --</option>
-                <option value="Franklin">Franklin</option>
-                <option value="Greenville">Greenville</option>
-                <option value="Springfield">Springfield</option>
-              </select>
-              </form>
-              
-
-
-                <label>If you have any additional information or comments, please enter text.</label>
-                <textarea name="comment" form="usrform">Enter text here...</textarea><br><br><br>
-                <input type="submit">
-                <input type="hidden" name="redirect" value="thankyou-8.html">
-             
+                <select id="storm_region" name="storm_region">
+                  <option disabled selected value>-- Select Region --</option>
+                  <option value="Franklin">Franklin</option>
+                  <option value="Greenville">Greenville</option>
+                  <option value="Springfield">Springfield</option>
+                </select>
+              <p>Are you in danger?</P>
+                <input type="radio" name="answer" value="yes"> Yes<br>
+                <input type="radio" name="answer" value="maybe"> Maybe<br>
+                <input type="radio" name="answer" value="no"> No  
+             <label>If you have any additional information or comments, please enter text.</label>
+               <textarea name="comment" form="usrform">Enter text here...</textarea><br><br><br>
+               <input type="submit" value="Submit">
+                            
           </legend>
-      </fieldset>  
+      </fieldset> 
+    </form>  
   </main>
 
   <footer>
