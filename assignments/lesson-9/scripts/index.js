@@ -1,7 +1,7 @@
  
 
  // store the URL of the JSON we want to retrieve in a variable
- var requestURL = 'http://smilindaisygal.github.io/assignments/lesson-9/towndata.json';
+ var requestURL = 'http://smilindaisygal.github.io/assignments/lesson-9/data/towndata.json';
     
  // create a new request object instance from the XMLHttpRequest constructor, using the new keyword
  var request = new XMLHttpRequest();
