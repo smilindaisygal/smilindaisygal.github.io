@@ -26,9 +26,13 @@
 
  // Function to populate the Header
  function populateHeader(jsonObj) {
- var myH1 = document.createElement('h1');
+ var myH2 = document.createElement('h2');
  myH1.textContent = jsonObj['name'];
  header.appendChild(myH1);
+
+ var myPara = document.createElement('p');
+    myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
+    header.appendChild(myPara);
 
  }
 
@@ -38,7 +42,7 @@
    
  for (var i = 0; i < index.length; i++) {
  var myArticle = document.createElement('article');
- var myH2 = document.createElement('h2');
+ var myH4 = document.createElement('h4');
  var myPara1 = document.createElement('p');
  var myPara2 = document.createElement('p');
  var myPara3 = document.createElement('p');
@@ -50,8 +54,8 @@
  myPara1.textContent = 'Motto: ' + index[i].motto;
  myPara2.textContent = 'Year Founded: ' + index[i].yearFounded;
  myPara3.textContent = 'Current Population:' + index[i].currentPopulation;
- myPara4.textContent = 'Average Rainfall' + index[i].averageRainfall;
- myPara5.textContent = 'Events';
+ myPara4.textContent = 'Average Rainfall:' + index[i].averageRainfall;
+ myPara5.textContent = 'Events:';
      
  var events = index[i].powers;
  for (var j = 0; j < events.length; j++) {
