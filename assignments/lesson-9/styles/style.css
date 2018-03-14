@@ -1,19 +1,21 @@
 /* || general styles */
 
 html {
-  font-family: 'fira sans', sans-serif; 
+  font-family: 'fira sans', sans-serif;
 }
 
-.towninfo h2 {
+body {
+  width: 800px;
+  margin: 0 auto;
+}
+
+h1, h2 {
   font-family: 'Fira Sans', sans-serif;
-  font-size: 2.5rem;
-  letter-spacing: -5px;
-  margin-bottom: 10px;
-}*/
+}
 
-/* header styles  */
+/* header styles */
 
-hgroup h1 {
+h1 {
   font-size: 4rem;
   text-align: center;
 }
@@ -22,24 +24,25 @@ hgroup p {
   font-size: 1.3rem;
   font-weight: bold;
   text-align: center;
-}*/
- 
+}
 
-.towninfo article {
+/* section styles */
+
+section.towninfo article {
   width: 33%;
   float: left;
   margin: 10px 0;
 }
 
-.towninfo p { 
+section.towninfo p {
   margin: 15px 0;
 }
 
-.towninfo ul {
+section.towninfo ul {
   margin-top: 0;
 }
 
-.town info h2 {
+h2 {
   font-size: 2.5rem;
   letter-spacing: -5px;
   margin-bottom: 10px;
