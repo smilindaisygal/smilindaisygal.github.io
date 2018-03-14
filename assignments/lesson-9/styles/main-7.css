@@ -26,11 +26,11 @@ header h1 {
     font-size-adjust: 23px;
 }
 
-header p {
+/* header p {
     font-size: 1.3rem;
     font-weight: bold;
     text-align: center;
-  }
+  } */
 
 h2, h3, h4, h5, h6{
     font-family: 'BioRhyme Expanded', serif;
@@ -114,19 +114,19 @@ figure img.img {
     height: 150px;
 }
 
-section.towninfo article {
+ section.towninfo article {
     width: 33%;
     float: left;
     margin: 10px 0;
   }
   
-  section.towninfo p {
+  /* section.towninfo p {
     margin: 15px 0;
   }
   
   section.townifo ul {
     margin-top: 0;
-  }
+  } */ */
   
 
 section.summary {
