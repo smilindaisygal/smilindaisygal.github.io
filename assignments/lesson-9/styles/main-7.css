@@ -114,17 +114,17 @@ figure img.img {
     height: 150px;
 }
 
-section article {
+section.towninfo article {
     width: 33%;
     float: left;
     margin: 10px 0;
   }
   
-  section p {
+  section.towninfo p {
     margin: 15px 0;
   }
   
-  section ul {
+  section.townifo ul {
     margin-top: 0;
   }
   
