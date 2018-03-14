@@ -12,7 +12,7 @@
   <link href="styles/main-7.css" rel="stylesheet">    <!-- default styles - small/phone views -->
   <link href="styles/medium-7.css" rel="stylesheet">  <!-- medium/tablet views -->
   <link href="styles/large-7.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
-</head>
+  </head>
 <body>
 
   <header>
@@ -32,14 +32,16 @@
     	<li><a href="gallery-7.html">Gallery</a></li>
     </ul>
   </nav>
+
       <hgroup>
 
       </hgroup>
-      <div class="towninfo">
 
-      </div>
+      <section class="towninfo">
 
-      <!-- <footer>
+      </section>
+
+      <footer>
         <aside>
           Weather Watchers<br>
           125 Main St.<br>
@@ -48,15 +50,18 @@
           contract@uri.com
         </aside>
         <p class="footer-bar">&copy;2018 All Rights Reserved | Weather Watchers | <span id="currentdate">Current Date Placeholder</span></p>
-      </footer> -->
+      </footer>
          
         <script src="scripts/hamburger7.js"></script>
         <script src="scripts/currentdate7.js"></script>
 
     <script>
 
+    // grab reference for header and store as a variable
+    var header = document.querySelector('hgroup');
+
     // grab reference for section and store as a variable
-    var section = document.querySelector('div');
+    var section = document.querySelector('section');
 
    // store the URL of the JSON we want to retrieve in a variable
  var requestURL = 'http://smilindaisygal.github.io/assignments/lesson-9/data/towndata.json';
@@ -78,7 +83,20 @@
 //  Here we are storing the response to our request (available in the response property) in a variable
 // called superHeroes; this variable will now contain the JavaScript object based on the JSON! 
  var townData = request.response;
+ populateHeader(townData);
  showTowns(townData);
+ }
+
+ // Function to populate the Header
+ function populateHeader(jsonObj) {
+ var myH1 = document.createElement('h1');
+ myH1.textContent = jsonObj['name'];
+ header.appendChild(myH1);
+
+//  var myPara = document.createElement('p');
+//     myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
+//     header.appendChild(myPara);
+
  }
 
  // creates and displays the superhero cards
