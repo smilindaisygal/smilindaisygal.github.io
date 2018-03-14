@@ -1,7 +1,7 @@
 /* || general styles */
 
 html {
-  font-family: 'fira sans', sans-serif;
+  font-family: 'fira sans', sans-serif; 
 }
 
 .towninfo h2 {
@@ -9,9 +9,9 @@ html {
   font-size: 2.5rem;
   letter-spacing: -5px;
   margin-bottom: 10px;
-}
+}*/
 
-/* header styles 
+/* header styles  */
 
 hgroup h1 {
   font-size: 4rem;
@@ -23,8 +23,7 @@ hgroup p {
   font-weight: bold;
   text-align: center;
 }*/
-
-/* section styles */
+ 
 
 .towninfo article {
   width: 33%;
@@ -32,7 +31,7 @@ hgroup p {
   margin: 10px 0;
 }
 
-/* .towninfo p {
+.towninfo p { 
   margin: 15px 0;
 }
 
@@ -44,4 +43,4 @@ hgroup p {
   font-size: 2.5rem;
   letter-spacing: -5px;
   margin-bottom: 10px;
-} */
+}
