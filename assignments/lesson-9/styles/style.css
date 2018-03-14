@@ -9,21 +9,11 @@ body {
   margin: 0 auto;
 }
 
-h2, h4 {
-  font-family: 'Fira Sans', sans-serif;
-}
-
-/* header styles */
-
 h2 {
-  font-size: 4rem;
-  text-align: center;
-}
-
-header p {
-  font-size: 1.3rem;
-  font-weight: bold;
-  text-align: center;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: -5px;
+  margin-bottom: 10px;
 }
 
 /* section styles */
@@ -42,8 +32,3 @@ section ul {
   margin-top: 0;
 }
 
-h4 {
-  font-size: 2.5rem;
-  letter-spacing: -5px;
-  margin-bottom: 10px;
-}
