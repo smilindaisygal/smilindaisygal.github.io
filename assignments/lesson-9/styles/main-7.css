@@ -109,6 +109,12 @@ figure img.img {
     height: 150px;
 }
 
+.towninfo article {
+    width: 33%;
+    float: left;
+    margin: 10px 0;
+  }
+
 section.summary {
     background-color: rgb(168,208,141);
     padding: 1em 0 1em 0;
