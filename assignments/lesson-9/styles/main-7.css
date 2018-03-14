@@ -26,7 +26,6 @@ header h1 {
     font-size-adjust: 23px;
 }
 
-
 h2, h3, h4, h5, h6{
     font-family: 'BioRhyme Expanded', serif;
 }
@@ -108,12 +107,6 @@ figure img.img {
     width: 200px;
     height: 150px;
 }
-
-div.towninfo article {
-    width: 33%;
-    float: left;
-    margin: 10px 0;
-  }
 
 section.summary {
     background-color: rgb(168,208,141);
