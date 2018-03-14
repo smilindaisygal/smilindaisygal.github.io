@@ -109,7 +109,7 @@ figure img.img {
     height: 150px;
 }
 
-.towninfo article {
+div.towninfo article {
     width: 33%;
     float: left;
     margin: 10px 0;
