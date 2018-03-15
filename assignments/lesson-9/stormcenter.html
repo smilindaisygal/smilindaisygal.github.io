@@ -59,17 +59,17 @@
                   </datalist>
               <label>Storm Severity</label><input type="range" name="rangeInput" min="1" max="10" size="20" onchange="updateTextInput(this.value);">
                 <input type="text" id="textInput" value=""size="1">
-              <label for="storm_region">What region is the storm in?</label></p>
+              <label for="storm_region">What region is the storm in?</label>
                 <select id="storm_region" name="storm_region">
                   <option disabled selected value>-- Select Region --</option>
                   <option value="Franklin">Franklin</option>
                   <option value="Greenville">Greenville</option>
                   <option value="Springfield">Springfield</option>
                 </select>
-              <p><div class="danger">Are you in danger?</div></P>
-                <input type="radio" name="answer" value="yes"> Yes<br>
+              <label class="danger">Are you in danger? 
+                <div><input type="radio" name="answer" value="yes"> Yes<br>
                 <input type="radio" name="answer" value="maybe"> Maybe<br>
-                <input type="radio" name="answer" value="no"> No  
+                <input type="radio" name="answer" value="no"> No </div></label>
              <label>If you have any additional information or comments, please enter text.</label>
                <textarea name="comment" form="usrform">Enter text here...</textarea><br><br><br>
                <input type="submit" value="Submit">

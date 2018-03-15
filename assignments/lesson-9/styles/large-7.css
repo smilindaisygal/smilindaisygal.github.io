@@ -13,8 +13,9 @@ section{
     margin-right:170px;
 }
 
-figure.grid {
+.grid {
   margin:.5rem;
+  grid-template-columns: 1fr 1fr 1fr; 
 }
 
 img {
