@@ -15,9 +15,13 @@ weatherObject.onload = function() {
     document.getElementById('currentTemp').innerHTML = weatherInfo.current_observation.temp_f;
     document.getElementById('currentWindspeed').innerHTML = weatherInfo.current_observation.wind_mph;
 
-    document.getElementById('w_icon').src = weatherInfo.current_observation.icon_url;
+    var iconurl = weatherInfo.current_observation.icon_url;
+    iconurl = iconurl.replace('http', 'https');
+
+    document.getElementById('w_icon').src = iconurl;
 
     document.getElementById('textForecast0').innerHTML = weatherInfo.forecast.txt_forecast.forecastday["0"].fcttext;
     document.getElementById('textForecast1').innerHTML = weatherInfo.forecast.txt_forecast.forecastday["1"].fcttext;
     document.getElementById('textForecast2').innerHTML = weatherInfo.forecast.txt_forecast.forecastday["2"].fcttext;
+
 } //end of onload
