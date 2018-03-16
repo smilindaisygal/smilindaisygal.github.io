@@ -15,6 +15,12 @@ weatherObject.onload = function() {
     document.getElementById('currentTemp').innerHTML = weatherInfo.current_observation.temp_f;
     document.getElementById('currentWindspeed').innerHTML = weatherInfo.current_observation.wind_mph;
 
+    var tempF = parseFloat(document.getElementById('currentTemp').innerHTML);
+    var speed = parseFloat(document.getElementById('currentWindspeed').innerHTML);
+    var chill = Math.round(35.74 + (0.6215 * tempF) - (35.75 * Math.pow(speed, .16)) + (0.4275 * tempF * Math.pow(speed, .16)));
+
+    document.getElementById("windchill").innerHTML = chill;
+
     var iconurl = weatherInfo.current_observation.icon_url;
     iconurl = iconurl.replace('http', 'https');
 
