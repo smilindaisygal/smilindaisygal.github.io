@@ -1,0 +1,26 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+  
+  article p.town-article img { width: 29.333%; }
+
+   figure img {
+    width: 500px;
+    height: 300px;
+}
+
+section{
+    margin-left: 170px;
+    margin-right:170px;
+}
+
+.grid {
+  margin:.5rem;
+  grid-template-columns: 1fr 1fr 1fr; 
+}
+
+img {
+  margin-right: 1rem;
+}
+/* hover effect - not anchor tags around images */
+img:hover {box-shadow: 5px 5px 10px gray;}
+}  
