@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Franklin city Weather condition</title>
+  <meta name="author" content="Holly Olson">
+  <meta name="description" content="Gallery pictures from winter 2017 -2018 of Franklin City and soon
+   Greenville and Springfield">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=BioRhyme+Expanded|Source+Sans+Pro" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header>
+    <img src="images/logo.jpg" alt="The site logo" width="75" height="75">
+    <h1>Weather Watchers</h1>
+    <h3>Weather Conditions for<br>Tri-City area</h3>
+  </header>
+   
+  <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+  <nav>
+    <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="franklin.html">Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a class="active" href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h3>Gallery</h3>
+    <section class="grid">    		
+    <figure >
+        <img class="img" src="images/snowincityfranklin.jpg" alt="snow covered street in Franklin" width="200" height="250">
+        <figcaption class="cap">Bellmont Street covered in snow<br> in Franklin, 2017-2018.</figcaption>
+    </figure>
+    <figure>    
+        <img class="img"src="images/snowinfranklin.jpg" alt="Car driving down Main Street in Franklin" width="250" height="200">
+        <figcaption class="cap">Car driving down Main Street <br> in Franklin, 2017-2018.</figcaption>
+    </figure> 
+    <figure>
+        <img class="img"src="images/housetopfranklin.jpg" alt="Aerial view of Franklin in the winter" width="250" height="200">
+        <figcaption class="cap">Aerial view of Franklin <br> in the winter, 2017-2018.</figcaption>
+    </figure> 
+    <figure> 
+        <img class="img" src="images/childrenfranklin.jpg" alt="child learning to ski" width="200" height="250">
+        <figcaption class="cap">Grandaughter of Mrs. Southwick at Cali Mountain Ski Resort <br> out side of Franlin, 2017-2018.</figcaption>
+    </figure>
+    <figure>    
+        <img class="img"src="images/geesefranklin.jpg" alt="Geese wandering around in the snow" width="200" height="250">
+        <figcaption class="cap">Geese strolling through Franklin's <br> City Park, 2017-2018.</figcaption>
+    </figure>
+    <figure>   
+        <img class="img"src="images/streamfranklin.jpg" alt="mountain stream" width="200" height="250">
+        <figcaption class="cap">Picture taken by Mr. Morgan, snow shoeing near <br> Cali Mountain Ski Resort, 2017-2018.</figcaption>
+    </figure>
+  </section>
+  </main>   
+  <footer>
+    <aside>
+      Weather Watchers<br>
+      125 Main St.<br>
+      Franklin, Mu 83454<br>
+      (999)999-9999<br>
+      contract@uri.com
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | Weather Watchers | <span id="currentdate">Current Date Placeholder</span></p>
+  </footer>
+     
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    
+  </body>
+  </html>

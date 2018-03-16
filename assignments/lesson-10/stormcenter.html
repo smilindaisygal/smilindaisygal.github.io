@@ -1,0 +1,98 @@
+
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Storm Center, the area to fill out the weather form, to give us a more aquarate view of weather conditions</title>
+  <meta name="author" content="Holly Olson">
+  <meta name="description" content="Storm Center form to help keep people up to date as to what is going on weather wise.">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=BioRhyme+Expanded|Source+Sans+Pro" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header>
+    <img src="images/logo.jpg" alt="The site logo" width="75" height="75">
+    <h1>Weather Watchers</h1>
+    <h3>Weather Conditions for<br>Tri-City area</h3>
+  </header>
+   
+  <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+  <nav>
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="franklin.html">Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html">Springfield</a></li>
+    	<li><a class="active" href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <main class="stormform">
+      <h2>Storm Form</h2><br>
+        <h4 class="haha">Please fill this form out for us so that we can have a more personalized view of the weather.</h4>
+        <!-- <img class="rabbit" src="images/rabbitinwinter.jpg" alt="Rabbit in the snow" width="135" height="240">
+        <img class="footprints" src="images/footprintsinsnow.jpg" alt="Animal tracks in the snow" width="143" height="240"><br><br><br><br> -->
+     <form action="thanks.html" method="get">   
+      <fieldset>
+          <legend>
+              <label>Full Name: </label><input name="fullname" type="text" pattern="[a-zA-Z -._]{3,99}" placeholder="Jonathon Acherman Smith" size="20" required>
+              <label>E-mail: </label><input name="email" type="email"  placeholder="john@gmail.com" size="20" required>
+              <label>Phone Number:</label> <input name="phonenumber" type="tel"  placeholder="(999)999-9999" size="20" required>
+              <label>Zipcode:</label> <input name="zipcode" type="text" placeholder="83454" size="20" required>
+              <label>Storm type:</label><form action="/action_page.php" method="get">
+                <input list="stormtype" name="storm">
+                  <datalist id="stormtype">
+                    <option diabled selected value>-- select storm type --</option>
+                    <option value="Blizzard">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Tornado">
+                    <option value="Flash flood">
+                    <option value="Thunderstorm">
+                    </option>    
+                  </datalist>
+              <label>Storm Severity</label><input type="range" name="rangeInput" min="1" max="10" size="20" onchange="updateTextInput(this.value);">
+                <input type="text" id="textInput" value=""size="1">
+              <label for="storm_region">What region is the storm in?</label>
+                <select id="storm_region" name="storm_region">
+                  <option disabled selected value>-- Select Region --</option>
+                  <option value="Franklin">Franklin</option>
+                  <option value="Greenville">Greenville</option>
+                  <option value="Springfield">Springfield</option>
+                </select>
+              <label class="danger">Are you in danger? 
+                <div style="text-align: right;"><input type="radio" name="answer" value="yes"> Yes<br>
+                <input type="radio" name="answer" value="maybe"> Maybe<br>
+                <input type="radio" name="answer" value="no"> No </div></label>
+             <label>If you have any additional information or comments, please enter text.</label>
+               <textarea name="comment" form="usrform">Enter text here...</textarea><br><br><br>
+               <input type="submit" value="Submit">
+                            
+          </legend>
+      </fieldset> 
+    </form>  
+  </main>
+
+  <footer>
+        <aside>
+          Weather Watchers<br>
+          125 Main St.<br>
+          Franklin, Mu 83454<br>
+          (999)999-9999<br>
+          contract@uri.com
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | Weather Watchers | <span id="currentdate">Current Date Placeholder</span></p>
+      </footer>
+         
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/stormseverity.js"></script>
+        
+      </body>
+      </html>
