@@ -1,0 +1,264 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { 
+    box-sizing: border-box;
+} 
+
+body {
+    font-family:  'Padauk', sans-serif;
+    font-size: 20px;
+}
+
+header { 
+    max-width: 100%;
+    font-family: 'Merriweather', serif;
+    text-align: left;
+}
+
+footer { 
+    max-width: 100%;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+nav, main {
+    max-width: 100%;
+   font-family: 'Padauk', sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: #598522;
+    padding: 3em 0 1em 0;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    color: #bac228;
+    font-size-adjust: 23px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Playfair Display', serif;
+    color: #bac228;
+}
+
+header img {
+    width: 200px;
+    height: 150px;
+    float: left;
+    margin-left: 20rem;
+}
+
+.hamburger { 
+    display: flex;
+    position: absolute;
+    top: 2.0rem;
+    right: 1.25rem;
+}
+
+.navigation a { 
+    list-style: none;
+    color: rgb(255, 248, 248);   
+}
+
+.navigation li { 
+    display: none;
+}
+
+.navigation.responsive {
+     position: relative;
+}
+
+.navigation.responsive li { 
+    font-family: 'Source Sans Pro', sans-serif; 
+    background-color:#6051c2 ; 
+    display: flex;
+    Flex-direction: column;
+    width: 100%; 
+    margin: 2px 0;
+    border: 1px solid black; 
+}
+
+.navigation.responsive li a {	
+    padding: 1rem; 
+    text-align: center;	
+    display: flex;
+    flex: 1 1 100%;
+    text-decoration:none; 
+}
+
+.navigation.responsive li a.acive {
+    background-color: rgb(240, 172, 109)
+}
+
+.navigation.responsive li a:hover:not(.active) { 
+    background-color:   #ffdb26;  
+}
+
+
+.grid {
+    list-style: none;
+  margin: 2em;
+  display: grid;
+  grid-gap: 10px;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill,minmax(300px, 1fr)); 
+}
+
+.img {
+    border: 3px solid #8cbb4e;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 1px 1px;
+}
+
+.cap {
+    margin-top: auto;
+    padding: 10px;
+    text-align: left;
+}
+figure img.img {
+    width:  250px;
+    height: 225px;
+}
+
+.riding{
+    text-align: left;
+    padding: 0 0 12px 0;
+}
+
+.skilled{
+    width: 250px;
+    height: 300px;
+    float: right;
+    padding: 0 5px 0 5px;
+
+}
+
+.easy1{
+    width: 350px;
+    height: 200px;
+    padding: 0 1rem 0 0; 
+}
+.easy{
+    width: 350px;
+    height: 200px;
+    float: left;
+    padding: 0 1rem 0 0;
+}
+
+.towninfo {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: .30rem;
+}
+
+.flipflop {
+    text-align: center;
+   
+}
+
+.flip{
+    float: left;
+    padding-bottom: 20px;
+    
+}
+
+.flop{
+    float: right;
+    padding-bottom: 20px;
+}
+
+.april{
+    text-align: left;
+    padding-left: 10px;
+}
+
+section.summary {
+    background-color: rgb(170, 209, 144);
+    padding: 1em 0 1em 0;
+    font-size: 18px;
+}
+
+.forecast {
+    display: none;
+    font-size: 18px;
+}
+
+.town-article {
+    display: Flex;
+    flex-direction: row;
+    margin-bottom: 1.5em;
+    font-size: 16px;
+}
+
+article p {
+    text-align: left;
+    margin: 0 0 10px 10px;
+   
+}
+
+.haha {
+    margin-bottom: 20px;
+}
+
+.bikeform{
+    background-color:#bac228;
+    border: 3px;
+   }
+
+.bikeform h2, h3, h4, h5, h6{
+    color:#598522;
+}   
+
+.danger{
+    float:left;
+    margin-bottom: 20px;
+}
+
+
+label {
+    width:180px;
+    clear:left;
+    text-align:right;
+    padding-right:10px;
+}
+
+textarea {
+    width:200px;
+    height:100px;
+}
+
+input, label, select, textarea { 
+    float:left;
+    margin-bottom: 20px;
+}
+
+
+input[type="radio"] {
+    display:inline-block;
+}
+
+label {
+    display:inline-block;
+}
+
+#danger{
+    float:left;
+    margin-bottom: 20px;
+    
+}
+
+footer {
+    background-color: rgb(107, 199, 46);
+    font-size: 13px;
+    padding: 0 0 1em 0;
+    font-size: 14px;
+}
+
+footer aside {
+    background-color: rgb(168,208,141);
+    padding: 1em 0 1em 0;
+}
