@@ -139,11 +139,6 @@ tr:nth-child(even) {
     text-align: left;
 }
 
-figure img.img {
-    width:  250px;
-    height: 225px;
-}
-
 .riding {
     text-align: left;
     padding: 0 0 12px 0;
@@ -173,12 +168,6 @@ left {
     padding: 0 1rem 0 0;
 }
 
-.towninfo {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: .30rem;
-}
-
 .flipflop {
     text-align: center;
    
@@ -200,54 +189,22 @@ left {
     padding-left: 10px;
 }
 
-section.summary {
-    background-color: rgb(170, 209, 144);
-    padding: 1em 0 1em 0;
-    font-size: 18px;
-}
-
-.forecast {
-    display: none;
-    font-size: 18px;
-}
-
-.town-article {
-    display: Flex;
-    flex-direction: row;
-    margin-bottom: 1.5em;
-    font-size: 16px;
-}
-
-article p {
-    text-align: left;
-    margin: 0 0 10px 10px;
-   
-}
-
 .haha {
     margin-bottom: 20px;
 }
 
-.bikeform{
+.bikeform {
     background-color:#f8f8f2;
     border: 3px;
    }
 
-.space{
+.space {
     padding-bottom: 80px; 
 }
-
-
 
 .bikeform h2, h3, h4, h5, h6{
     color:#598522;
 }   
-
-.danger{
-    float:left;
-    margin-bottom: 20px;
-}
-
 
 label {
     width:180px;
@@ -273,12 +230,6 @@ input[type="radio"] {
 
 label {
     display: inline-block;
-}
-
-#danger{
-    float: left;
-    margin-bottom: 20px;
-    
 }
 
 footer {
