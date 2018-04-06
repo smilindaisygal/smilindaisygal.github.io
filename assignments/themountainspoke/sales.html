@@ -38,39 +38,36 @@
         click back and forth between the bicycle company sites.  We have put four of the top Brands we sell, side by side so you not only 
         see the bikes but you are also able to read about it and check the price.
     </p>
-    <section class="grid">
-    <figure >
-            <img class="img" src="images/pinarello.jpg" alt="The Pinarello bicycle, made as a quality road bikes" width="200" height="250">
-            <figcaption class="cap">The Italian brand is best known for its quality road bikes, although it also produces cyclocross, track,
-                  mountain and city bikes. Pinarello bikes have been ridden by a number of top pro teams, including Telekom, Banesto,
-                   Movistar and Team Sky. They're also British Cycling's bike of choice, according to Bike Radar. Price ranging from $2,500 to
-                   $5,125.<br><br><a href="http://www.pinarello.com">pinarello.com</a></figcaption>
-        </figure>
-        <figure>    
-            <img class="img" src="images/raleigh.jpg" alt="The Raleigh bicycle, made as ahigh quality commuter bikes" width="250" height="200">
-            <figcaption class="cap">Raleigh has an iconic place in cycling history. It made high quality commuter bikes that fit a modest
-                 budget. They say that Furley has been popular this year. The frame is made of steel, the seat is a Raleigh Classic Road and the 
-                 headset has FSA Integrated Cartridge Bearings.  Bikes range in price from $275 to $690 for comfort bikes, $520 to $1,550 for fitness 
-                 bikes, $275 to $1,325 for mountain bikes, and $520 to $2,725 for road bikes, according to Consumer Reports.<br><br> 
-                  <a href="http://www.raleighusa.com">raleighusa.com</a> </figcaption>
-        </figure> 
-        <figure>
-            <img class="img" src="images/giant.jpg" alt="The Giant Bicycle, made as the best budget bikes" width="250" height="200">
-            <figcaption class="cap">This is one of the best budget bike brands, Engay says. It gets high ratings in both the mountain and 
-                hybrid bikes categories because of the bikes’ design and features. Cyclists who want a comfortable and confident ride, both
-                 on and off the road, consider Giant first. The ATX Lite, for example, is designed as a cyclocross bike, which is stronger
-                  than a road bike but not as stable as a mountain bike, and you can use it on various terrains, Nemirovski says. Prices range from
-                   $607.99 to $11,905. “And it’s also a good entry-level bike.”<br><br><a href="http://www.giant-bicycles.com">giant-bicycles.com</a></figcaption>
-        </figure> 
-        <figure>
-                <img class="img" src="images/felt.jpg" alt="The Felt Bicycle, made to be the best race bike, or just an everyday bike" width="250" height="200">
-                <figcaption class="cap">Felt’s goal is to build the best bikes in the world, according to Campus Wheel Works. They say the 
-                  bikes feel as if the brand puts the same effort into every one whether it’s a bike for cruising around town, crushing local
-                  single track, or setting your personal best at a triathlon. Felt develops every part of every bike down to the littlest 
-                  details with in-house engineers, making the bikes as good as they can possibly be.  Prices ranging from $1,785 to $8,999.<br><br>
-                     <a href="http://www.feltbicycles.com">feltbicycles.com</a></figcaption>
-            </figure> 
-          </section>  
+    <ul class="grid2">
+    <li><img class="img" src="images/pinarello.jpg" alt="The Pinarello bicycle, made as a quality road bikes" width="200" height="250">
+      <ul>
+        <li>The Italian brand, Pinarello, is best known for its quality road bikes, although it also produces cyclocross, track,
+                  mountain and city bikes. They're also British Cycling's bike of choice, according to Bike Radar. Price ranging from $2,500 to
+                   $5,125.</li>
+        </ul>           
+      </li>
+        <li><img class="img" src="images/raleigh.jpg" alt="The Raleigh bicycle, made as ahigh quality commuter bikes" width="250" height="200">
+          <ul>
+            <li>Raleigh has an iconic place in cycling history. It made high quality commuter bikes that fit a modest
+                 budget. The frame is made of steel. Bikes range in price from $275 to $690 for comfort bikes, $520 to $1,550 for fitness bikes, $275 to $1,325 for mountain bikes,
+                   and $520 to $2,725 for road bikes, according to Consumer Reports.</li>
+          </ul>        
+        </li> 
+        <li><img class="img" src="images/giant.jpg" alt="The Giant Bicycle, made as the best budget bikes" width="250" height="200">
+          <ul>
+            <li>Giant gets high ratings in both the mountain and hybrid bikes categories because of the bikes’ design and 
+              features. Cyclists who want a comfortable and confident ride, both on and off the road, consider Giant first. Prices range 
+              from $607.99 to $11,905. “And it’s also a good entry-level bike.”</li>
+          </ul>    
+        </li> 
+        <li><img class="img" src="images/felt.jpg" alt="The Felt Bicycle, made to be the best race bike, or just an everyday bike" width="250" height="200">
+          <ul>
+              <li>Felt bikes feel as if their brand puts the same effort into every bike, whether it’s a bike for cruising
+                   around town, crushing local single track, or setting your personal best at a triathlon. Felt develops every part of 
+                   every bike down to the littlest details with in-house engineers.  Prices ranging from $1,785 to $8,999.</li>
+            </ul>         
+        </li> 
+          </ul>  
 
     
   </main>   
@@ -78,9 +75,15 @@
     <br><p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate">Current Date Placeholder</span></p><br>
     <a href="referencepage.html">Reference Page</a>
    </footer>
-     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
-    
+    <script>
+      $(function(){
+        $('.grid2 > li').hover(function(){
+			$(this).children("ul").slideToggle(200);
+		})
+	})
+    </script>
   </body>
   </html>
