@@ -111,7 +111,7 @@ header img {
 }
 
 .grid2 {
-  list-style-type: none;
+  list-style-type: none;  
   margin: 2em;
   display: grid;
   grid-gap: 10px;
@@ -121,9 +121,10 @@ header img {
 }
 
 .grid2 li {
+    list-style-type: none;
 	width: 290px;
 	height: 48px;
-	float: left;
+	float: center;
 	text-align: left;
 	background:rgb(253, 252, 252);
 	font-family: sans-serif;
