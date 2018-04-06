@@ -73,7 +73,7 @@
                         test ride and make certain you are 100% satisfied with your repair. </p>           
                  </section> <br><br>
   <section  class="spin">   
-    <table>
+    <!-- <table>
         <tr>
           <th>Services</th>
         </tr>
@@ -193,7 +193,7 @@
     <tr>
         <th>Tune-up Packages</th>
     </tr>
-    <tr>
+    <tr> 
         <td>Big Box Safety Check</td>
         <td>$20</td>
         <td>Pedal, axle, headset, and crankset torqued to specification. Brake, 
@@ -237,13 +237,35 @@
              analysis and service and other required repairs. Test ridden by certified tech.</td>
     </tr>
   </table>
-</section>      
+</section>-->      
   </main>   
   <footer>
    <br> <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate">Current Date Placeholder</span><br>
     <a href="referencepage.html">Reference Page</a>
    </footer>
-     
+    <script>
+     var spin = document.querySelector('spin');
+     var requestURL = 'https://smilindaisygal.github.io/cit230/assignments/themountainspoke/data/pricing.json';
+     var request = new XMLHttpRequest();
+     request.open('GET', requestURL);
+     request.responseType = 'json';
+     request.send();
+     request.onload = function() {
+      var pricing = request.response;
+    populateSpin(pricing);
+    showServices(pricing);
+    }
+    function populateSpin(jsonObj) {
+    var myH1 = document.createElement('h1');
+    myH1.textContent = jsonObj['services'];
+    spin.appendChild(myH1);
+
+    var myPara = document.createElement('p');
+    myPara.textContent = "service" + jsonObj + "Cost" + jsonObj;
+    spin.appendChild(myPara);
+    }
+
+    </script> 
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
     

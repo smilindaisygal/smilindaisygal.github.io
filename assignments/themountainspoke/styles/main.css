@@ -118,21 +118,22 @@ header img {
     padding: 1px 1px;
 }
 
-table {
+.spin table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
 }
 
-td, th {
+.spin td, th {
     border: 1px solid #736ba8;
     text-align: left;
     padding: 8px;
 }
 
-tr:nth-child(even) {
+.spin tr:nth-child(even) {
     background-color: #dacd8c ;
 }
+
 .cap {
     margin-top: auto;
     padding: 10px;
