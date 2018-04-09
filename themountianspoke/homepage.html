@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Mountain Spoke website bringing adventure to everyone who can use a bicycle.</title>
+  <meta name="author" content="Holly Olson">
+  <meta name="description" content="Introduction to The Moutain Spoke website and all the joy you will find there.">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Padauk|Playfair+Display" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header>
+    <img src="images/logopic.jpg" alt="The site logo" width="100" height="75">
+    <h1>The Mountain Spoke</h1><br><br>
+    
+  </header>
+   
+  <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+  <nav>
+    <ul class="navigation">
+        <li><a class="active" href="homepage.html">Home</a></li>
+        <li><a href="adventure.html">Adventure Tours</a></li>
+    	<li><a href="events.html">Events</a></li>
+    	<li><a href="sales.html">The Bike Store</a></li>
+    	<li><a href="service.html">The Bike Shop</a></li>
+    	<li><a  href="contactus.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Biking is a way of Life.</h2>
+    <p>Come join the fun of biking, at The Mountain Spoke located in Bozeman, Montana.  Here biking is not just a hobby, it is a way of 
+      life.<br>Feel one with nature as you get the opportunity be in the great outdoors.<br>
+      We offer biking adventures for all ages, and also a bike park for those who want to show off their skills.<br>When you are here
+      you will feel at home.
+    <section class="grid">    		
+    <figure >
+        <img class="img" src="images/action.jpg" alt="Mountain biking down steep hill" width="250" height="200">
+        <figcaption class="cap">Skilled Cyclist on the Emerald Lake/Heather<br> Lake Adventure, 2018.</figcaption>
+    </figure>
+    <figure>    
+        <img class="img" src="images/child.jpg" alt="Child biking down a street in Bozman Montana" width="250" height="200">
+        <figcaption class="cap">Child biking down Kagy Boulevard with family<br> on the Gallagator Trail, 2018.</figcaption>
+    </figure> 
+    <figure>
+        <img class="img" src="images/bikepark.jpg" alt="Skills be shown by a rider at the bike park" width="250" height="200">
+        <figcaption class="cap">Brant Jorgenson showing off his skills at the bike park, 2018.</figcaption>
+    </figure> 
+    <figure> 
+        <img class="img" src="images/easyoffroad.jpg" alt="Taking a scenic adventure" width="200" height="250">
+        <figcaption class="cap">A family cycling on the Sourdough Ridge Loop,<br> 2018.</figcaption>
+    </figure>
+   </section>
+  </main>   
+  <footer>
+  <br><p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate">Current Date Placeholder</span></p><br>
+  <a href="referencepage.html">Reference Page</a>
+  </footer>
+     
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    
+  </body>
+  </html>
