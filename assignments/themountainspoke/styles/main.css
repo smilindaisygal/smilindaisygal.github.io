@@ -110,7 +110,7 @@ header img {
   grid-template-columns: repeat(auto-fill,minmax(300px, 1fr)); 
 }
 
-.grid2 {
+ .grid2 {
     
   list-style-type: none;  
   margin: 2em;
@@ -119,9 +119,9 @@ header img {
   grid-auto-flow: dense;
   grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
   padding-bottom: 280px;
-}
+} 
 
-.grid2 li {
+ .grid2 li {
     list-style-type: none;
 	width: 290px;
 	height: 48px;
@@ -142,7 +142,7 @@ header img {
 	/* Hide the Submenus */
     display:none;
     
-}
+} */
 
 
 .img {
