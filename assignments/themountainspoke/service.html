@@ -33,7 +33,7 @@
     </ul>
   </nav>
   <main class="space">
-          <section class="left">
+          <!-- <section class="left">
                 
                    <h2>Service Menu</h2>
                    <h4>Our Service Technicians - Trained, Talented, and Committed to Excellence!</h4>
@@ -71,7 +71,7 @@
                      <h4>100% Satisfaction Guarantee </h4> 
                      <p>Once your bike has been serviced and repaired we recommend you take it for a
                         test ride and make certain you are 100% satisfied with your repair. </p>           
-                 </section> <br><br>
+                 </section> <br><br> -->
   <section>   
     <!-- <table>
         <tr>
@@ -243,6 +243,10 @@
    <br> <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate">Current Date Placeholder</span><br>
     <a href="referencepage.html">Reference Page</a>
    </footer>
+
+   <script src="scripts/hamburger.js"></script>
+   <script src="scripts/currentdate.js"></script>
+
     <script>
      var section = document.querySelector('section');
      var requestURL = 'https://smilindaisygal.github.io/cit230/assignments/themountainspoke/data/pricing.json';
@@ -256,39 +260,30 @@
       showServices(pricing);
     }
     function showServices(jsonObj) {
-    var service = jsonObj['service'];
+    var service = jsonObj['services'];
       
-    for (var i = 0; i < service.length; i++) {
+    for (var i = 0; i < services.length; i++) {
+      if (
+        services[i].name == "Services"       )
     { 
     var myArticle = document.createElement('article');
     var myH2 = document.createElement('h2');
-    var myPara1 = document.createElement('p');
-    // // var myPara2 = document.createElement('p');
-    // var myPara3 = document.createElement('p');
-    // var myList = document.createElement('ul');
+    var myList = document.createElement('ul');
+   
 
-    myH2.textContent =service[i].name;
-    myPara1.textContent = ' Brake Adjustment:' + service[i].brakeadjustment;
-    myPara2.textContent = 'Brake Bleed: ' + service[i].brakebleed;
-    myPara3.textContent = 'Brake Overhaul ' + service[i].brakeoverhaul;
-    myPara4.textContent = 'Cable Replacement' + service[i].cablereplacement;
-    myPara5.textContent = 'Clean Dirty Bike' + service[i].cleandirtybike;
-    myPara6.textContent = 'Drivetrain Clean' + service[i].drivetrainclean;
-    myPara7.textContent = 'Fork Services' + service[i].forkservices;
-    myPara8.textContent = 'Handle Bar Wrap/Tape' + service[i].handlebarwrap;
-        
-    var superPowers = heroes[i].powers;
-    for (var j = 0; j < superPowers.length; j++) {
-      var listItem = document.createElement('li');
-      listItem.textContent = superPowers[j];
+    myH2.textContent = service[i].name;
+    myPara1.textContent = "Services:"
+    
+    var manyServices = service[i].services;
+    for (var j = 0; j < manyServices.length; j++) {
+      var listItem = document.createElement("li");
+      listItem.textContent = manyServices[j];
       myList.appendChild(listItem);
     }
 
      myArticle.appendChild(myH2);
      myArticle.appendChild(myPara1);
-    // myArticle.appendChild(myPara2);
-    // myArticle.appendChild(myPara3);
-    // myArticle.appendChild(myList);
+     myArticle.appendChild(myList);
 
      section.appendChild(myArticle);
   }

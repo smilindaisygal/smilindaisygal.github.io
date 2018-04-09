@@ -102,6 +102,7 @@ header img {
 
 
 .grid {
+   
   list-style-type: none;
   margin: 2em;
   display: grid;
@@ -117,7 +118,7 @@ header img {
   grid-gap: 10px;
   grid-auto-flow: dense;
   grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
-  padding-bottom: 280px;
+  padding-bottom: 155px;
 }
 
 .grid2 li {
@@ -141,7 +142,7 @@ header img {
 	/* Hide the Submenus */
     display:none;
     
-}
+} 
 
 
 .img {
@@ -152,19 +153,19 @@ header img {
     padding: 1px 1px;
 }
 
-table {
+.spin table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
 }
 
-td, th {
+.spin td, th {
     border: 1px solid #736ba8;
     text-align: left;
     padding: 8px;
 }
 
-tr:nth-child(even) {
+.spin tr:nth-child(even) {
     background-color: #dacd8c ;
 }
 

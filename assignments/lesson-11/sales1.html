@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dropdown Menu</title>
+	<link rel="stylesheet" href="css/dropdownmenu.css">
+	
+</head>
+<body>
+<ul class="dropdownMenu">
+		<li><img class="img" src="images/pinarello.jpg" alt="The Pinarello bicycle, made as a quality road bikes" width="200" height="250">
+			<ul>
+				<li>The Italian brand, Pinarello, is best known for its quality road bikes. Price ranging from $2,500 to $5,125.</li>
+			</ul>
+		</li>
+		<li><img class="img" src="images/raleigh.jpg" alt="The Raleigh bicycle, made as ahigh quality commuter bikes" width="250" height="200">
+			<ul>
+				<li>Raleigh bikes are high quality commuter bikes that fit a modest budget. Prices range from $275 to $2,725.</li>
+			</ul>
+		</li>
+		<li><img class="img" src="images/giant.jpg" alt="The Giant Bicycle, made as the best budget bikes" width="250" height="200">
+			<ul>
+				<li>Giant gets high ratings because of the bikes’ design and features. Prices range from $607.99 to $11,905.</li>
+			</ul>
+		</li>
+		<li><img class="img" src="images/felt.jpg" alt="The Felt Bicycle, made to be the best race bike, or just an everyday bike" width="250" height="200">
+			<ul>
+				<li>Felt develops every part of every bike down to the littlest details with in-house engineers.  Prices ranging from $1,785 to $8,999.</li>
+			</ul>
+		</li>
+		<li>Kiwi
+			<ul>
+				<li>Crush</li>
+			</ul>
+		</li>
+</ul>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>   
+	<script>
+	$(function(){
+		// All jQuery code goes here
+        // $('.dropdownMenu > li').hover( function(){
+		// 	//mouseover
+		// 	$(this).children("ul").slideDown(200);
+		// }, function(){
+		// 	//mouseout
+
+		// 	$(this).children("ul").slideUp(200);
+		// })
+
+		//does same thing with less code
+        $('.dropdownMenu > li').hover(function(){
+			$(this).children("ul").slideToggle(200);
+		})
+	})
+	</script>
+</body>
+</html>
