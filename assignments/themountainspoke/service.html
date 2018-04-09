@@ -89,14 +89,14 @@
    var section = document.querySelector('section.spin');
    var requestURL = 'https://smilindaisygal.github.io/data/pricing.json';
    var request = new XMLHttpRequest();
-   request.open('GET', requestURL);
-   request.responseType = 'json';
+   request.open("GET", requestURL);
+   request.responseType = "json";
    request.send();
    
    request.onload = function() {
   var pricing = request.response;
   showServices(pricing);
-  }
+  };
   function showServices(jsonObj) {
    var services = jsonObj["services"];
                     
@@ -111,7 +111,7 @@
                  
               
     myH2.textContent = services[i].name;
-    myPara1.textContent = "Offered:"
+    myPara1.textContent = "Offered:";
                   
     var manyServices = services[i].offered;
     for (var j = 0; j < manyServices.length; j++) {
@@ -130,8 +130,7 @@
 }
                 
 </script> 
-<script src="scripts/hamburger.js"></script>
-<script src="scripts/currentdate.js"></script>
+
                   
 </body>
 </html>
