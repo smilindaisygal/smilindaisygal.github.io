@@ -6,7 +6,7 @@
 
 body {
     font-family:  'Padauk', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 header { 
@@ -35,7 +35,7 @@ header {
 header h1 {
     font-family: 'Playfair Display', serif;
     color: #bac228;
-    font-size-adjust: 18px;
+    font-size-adjust: 23px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -51,7 +51,7 @@ header img {
     width: 200px;
     height: 150px;
     float: left;
-    margin-left: 10rem;
+    margin-left: 20rem;
 }
 
 .hamburger { 
@@ -100,6 +100,7 @@ header img {
     background-color:   #ffdb26;  
 }
 
+
 .grid {
   list-style-type: none;
   margin: 2em;
@@ -109,55 +110,40 @@ header img {
   grid-template-columns: repeat(auto-fill,minmax(300px, 1fr)); 
 }
 
-.grid2 ul {
-  position:absolute;
-  top:0px;
-  bottom:0px;
-  left:0px;
-  right:0px;
-  width:960px;
-  height:100px;
-  margin:auto;
-  list-style:none;
-  padding:0px;
-  border-top: 4px  #6051c2;
-  list-style-type: none;
+.grid2 {
+    
+  list-style-type: none;  
   margin: 2em;
   display: grid;
   grid-gap: 10px;
   grid-auto-flow: dense;
-  grid-template-columns: repeat(auto-fill,minmax(300px, 1fr)); 
-}
+  grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+  padding-bottom: 280px;
 }
 
 .grid2 li {
-	width: 190px;
+    list-style-type: none;
+	width: 290px;
 	height: 48px;
-	float: left;
-	text-align: center;
-	background:rgb(240, 240, 240);
+	float: center;
+	text-align: left;
+	background:rgb(253, 252, 252);
 	font-family: sans-serif;
-	line-height: 3.6;
-	text-shadow: 0px 1px 1px rgba(0,0,0,0.4);
-	font-size: 14px;
-    margin: 1px;
-    padding-bottom: 15px;
+    line-height: 1.5;
+	text-shadow: 0px 1px 1px rgba(88, 107, 58, 0.4);
+	font-size: 16.5px;
+	margin: 5px;
 }
 
 .grid2 li > ul {
-	position:relative;
+	position:left;
 	width:190px;
 	clear:both;
-	/* Hide the Submenus*/ 
+	/* Hide the Submenus */
     display:none;
-    padding-bottom: 15px;
     
 }
 
-.grid2h4 {
-	margin:0px;
-	padding:0px;
-} 
 
 .img {
     border: 3px solid #8cbb4e;

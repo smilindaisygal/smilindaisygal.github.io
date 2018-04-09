@@ -28,21 +28,6 @@
        "Wheel Building" : "$45" ,
        "Wheel Truing - basic" : "$15" ,
        "Wheel Truing - major" : "$35"
-},
-
-{
-    "tune-up": [
-        {
- 
-        "Big Box Safety Check" : "$20" ,
-        "Standard Safety Check" : "$10" ,
-        "Basic Tune-up" : "$75" ,
-        "Race/Event Tune and Detail" : "$49" ,
-        "Standard Tune-up" : "$70" ,
-        "Troy's New Bike Tune-up" : "$90" ,
-        "Overhaul" : "$120 to $250 or more depending on the bike type"  
-         }
-        ]
 }
 ]
 }

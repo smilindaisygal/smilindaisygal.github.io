@@ -14,84 +14,124 @@
   <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
 </head>
 <body>
-<main>
+
   <header>
     <img src="images/logopic.jpg" alt="The site logo" width="100" height="75">
     <h1>The Mountain Spoke</h1><br><br>
+    
   </header>
    
   <button class="hamburger" onclick="toggleHam()">&#9776;</button>
   <nav>
     <ul class="navigation">
-      <li><a href="homepage.html">Home</a></li>
-      <li><a href="adventure.html">Adventure Tours</a></li>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="adventure.html">Adventure Tours</a></li>
     	<li><a href="events.html">Events</a></li>
     	<li><a href="sales.html">The Bike Store</a></li>
     	<li><a class="active" href="service.html">The Bike Shop</a></li>
     	<li><a href="contactus.html">Contact Us</a></li>
     </ul>
   </nav>
-  
-  <section class="spin">   
+  <main class="space">
+          <section class="left">
+                
+                   <h2>Service Menu</h2>
+                   <h4>Our Service Technicians - Trained, Talented, and Committed to Excellence!</h4>
+                   <p>The Mountain Spoke bike service technicians are top notch and know their stuff! 
+                        They’ve been factory trained and take pride in their work. The Mountain Spoke 
+                        techs work as a team each bringing special expertise to bear in solving
+                         difficult repair problems.</p>
+                         <img class="flop" src="images/racinghandles.jpg" alt="racing handles" width="200" height="150"> 
+                   <h4>Special Repair Services</h4>
+                   <p><span class="left">Our mechanics enjoy trouble-shooting problems on every make-model and style of 
+                       bicycle.  Regardless of the degree of your bike's disrepair, we’ll take on the 
+                       challenge if it makes sense economically!<br> $40 per hour labor rate, parts 
+                       additional.</span></p>
+                   <h4>Big Box Bike Safety Check</h4>
+                   <p>Roughly 75% of bikes purchased at Big Box Retailers fail basic safety checks due
+                      to assembly errors. Even if there aren't outright safety issues, poor assembly
+                      can mean missed shifting drivetrains, under-inflated tires, loose headsets,
+                      wheels that are improperly tensioned and prone to damage, and other problems that
+                      will shorten bicycles lifespan and make them unsafe to ride. Our certified techs
+                      are happy to do a thorough safety check.</p>
+                      <img class="flip" src="images/gears.jpg" alt="bike gears" width="200" height="200">
+                   <h4>Bike Overhaul</h4> 
+                   <p>Overhaul price varies, based on a number of factors – condition, age, brand/model,
+                      and type/brand of replacement parts. Labor charge for this service is typically
+                      within the following ranges:<br>
+                     <ul>
+                         <li>Kids/youth bike (geared)-$120-180</li>
+                         <li>Adult rigid bike-$160-320</li>
+                         <li>Suspension bike-$200-400</li>
+                     </ul><br>
+
+                     Price of parts will depend on what is required and the brand. We always strive to
+                     find parts of the highest quality at the most affordable price.
+                     <img class="flop" src="images/biketire.jpg" alt="bike tire" width="150" height="200">
+                     <h4>100% Satisfaction Guarantee </h4> 
+                     <p>Once your bike has been serviced and repaired we recommend you take it for a
+                        test ride and make certain you are 100% satisfied with your repair. </p>           
+                 </section> <br><br>
+<section class="spin">   
     
-  </section>      
+</section>      
 </main>   
-  <footer>
-   <br> <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate">Current Date Placeholder</span><br>
-    <a href="referencepage.html">Reference Page</a>
-   </footer>
-
-   <script src="scripts/hamburger.js"></script>
-   <script src="scripts/currentdate.js"></script>
-
-    <script>
-
-     var section = document.querySelector('section.spin');
-     var requestURL = 'https://smilindaisygal.github.io/cit230/data/pricing.json';
-     var request = new XMLHttpRequest();
-     request.open('GET', requestURL);
-     request.responseType = 'json';
-     request.send();
-
-     request.onload = function() {
-      var pricing = request.response;
-      showServices(pricing);
-    }
-    function showServices(jsonObj) {
-    var services = jsonObj["services"];
-      
+ <footer>
+ <br> <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate">Current Date Placeholder</span><br>
+ <a href="referencepage.html">Reference Page</a>
+ </footer>
+             
+ <script src="scripts/hamburger.js"></script>
+ <script src="scripts/currentdate.js"></script>
+              
+<script>
+              
+   var section = document.querySelector('section.spin');
+   var requestURL = 'https://smilindaisygal.github.io/cit230/data/pricing.json';
+   var request = new XMLHttpRequest();
+   request.open('GET', requestURL);
+   request.responseType = 'json';
+   request.send();
+   
+   request.onload = function() {
+  var pricing = request.response;
+  showServices(pricing);
+  }
+  function showServices(jsonObj) {
+   var services = jsonObj["services"];
+                    
     for (var i = 0; i < services.length; i++) {
-      if (
-        services[i].name == "Services"       )
+    if (
+    services[i].name == "Services"       )
     { 
     var myArticle = document.createElement("article");
     var myH2 = document.createElement("h2");
     var myPara1 = document.createElement("p");
     var myList = document.createElement("ul");
-   
-
+                 
+              
     myH2.textContent = services[i].name;
     myPara1.textContent = "Offered:"
-    
+                  
     var manyServices = services[i].offered;
     for (var j = 0; j < manyServices.length; j++) {
-      var listItem = document.createElement("li");
-      listItem.textContent = manyServices[j];
-      myList.appendChild(listItem);
+    var listItem = document.createElement("li");
+    listItem.textContent = manyServices[j];
+    myList.appendChild(listItem);
     }
-
-     myArticle.appendChild(myH2);
-     myArticle.appendChild(myPara1);
-     myArticle.appendChild(myList);
-
-     section.appendChild(myArticle);
+              
+    myArticle.appendChild(myH2);
+    myArticle.appendChild(myPara1);
+    myArticle.appendChild(myList);
+              
+    section.appendChild(myArticle);
     }
   }
 }
-  
-    </script> 
-    <script src="scripts/hamburger.js"></script>
-    <script src="scripts/currentdate.js"></script>
-    
-  </body>
-  </html>
+                
+</script> 
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/currentdate.js"></script>
+                  
+</body>
+</html>
