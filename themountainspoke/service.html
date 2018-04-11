@@ -89,7 +89,7 @@
 var output = document.querySelector('section');
 // var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
-var requestURL = 'https://smilindaisygal.github.io/themountainspoke/data/pricing.json';
+var requestURL = 'https://smilindaisygal.github.io/themountainspoke/data/new.json';
 
 var request = new XMLHttpRequest();
 request.open("GET", requestURL);
@@ -113,11 +113,14 @@ request.send();
 	var services = jsondata['offers'];
 	for (var i = 0; i < services.length; i++) {
 		var service = document.createElement('h3');
-		 service.textContent = services[i].name + ' Service';
-    // var motto = document.createElement('p');
-    //  motto.textContent = '"' + cities[i].motto + '"';
-		output.appendChild(service);
-		// output.appendChild(motto);
+     service.textContent = services[i].name + ' Service';
+     
+    var description = document.createElement('p');
+    description.textContent = '"' + services[i].description + '"';
+    var cost = document.createElement('p');
+    cost.textContent = '"' + services[i].cost + '"';
+		output.appendChild(description);
+		output.appendChild(cost);
   }
 
 };
