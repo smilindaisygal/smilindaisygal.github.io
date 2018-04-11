@@ -112,8 +112,8 @@ request.send();
 	var jsondata = request.response;
 	var services = jsondata['offers'];
 	for (var i = 0; i < services.length; i++) {
-		var service = document.createElement('h3');
-     service.textContent = services[i].name + ' Service';
+		// var service = document.createElement('h3');
+    //  service.textContent = services[i].name + ' Service';
      
     var description = document.createElement('p');
     description.textContent = '"' + services[i].description + '"';
