@@ -153,21 +153,22 @@ header img {
     padding: 1px 1px;
 }
 
-section.spin table {
+section.spin h4 {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
 }
 
-section.spin td, th {
+section.spin p {
     border: 1px solid #736ba8;
     text-align: left;
     padding: 8px;
-}
-
-section.spin tr:nth-child(even) {
     background-color: #dacd8c ;
 }
+
+/* section tr:nth-child(even) {
+    background-color: #dacd8c ;
+} */
 
 .cap {
     margin-top: auto;
