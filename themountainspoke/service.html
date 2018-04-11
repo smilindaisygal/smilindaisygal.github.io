@@ -72,7 +72,7 @@
             <p>Once your bike has been serviced and repaired we recommend you take it for a
                test ride and make certain you are 100% satisfied with your repair. </p>           
         </section> <br><br> -->
-<section class="spin">   
+<section>   
     
 </section>      
 </main>   
@@ -86,184 +86,25 @@
               
 <script>
 
-// var xmlhttp = new XMLHttpRequest();
-// xmlhttp.onreadystatechange = function() {
-//     if (this.readyState == 4 && this.status == 200) {
-//         var myObj = JSON.parse(this.responseText);
-//         document.getElementById("demo").innerHTML = myObj.services.brake_adjustment;
-//     }
-// };
-// xmlhttp.open("GET", "https://smilindaisygal.github.io/data/pricing.txt", true);
-// xmlhttp.send();
+var output = document.querySelector('section');
+var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+var request = new XMLHttpRequest();
+request.open("GET", requestURL);
+request.responseType = 'json';
+request.send();
 
-// function loadJSON(file, callback) {   
-
-//     var xobj = new XMLHttpRequest();
-//     xobj.overrideMimeType("application/json");
-//     xobj.open('GET', file, true); // Replace 'my_data' with the path to your file
-//     xobj.onreadystatechange = function () {
-//           if (xobj.readyState == 4 && xobj.status == "200") {
-//             // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
-//             callback(xobj.responseText);
-//           }
-//     };
-//     xobj.send(null);  
-//  }
- 
-
-// function load() {
-    
-//     loadJSON("data.json", function(response) {
-  
-//         var actual_JSON = JSON.parse(response);
-//         console.log(actual_JSON);
-//     });
-    
-    
-// }
-
-function loadJSON(file, callback) {   
-
-var xobj = new XMLHttpRequest();
-xobj.overrideMimeType("application/json");
-xobj.open('GET', "https://smilindaisygal.github.io/themountainspoke/data/pricing.json", true); // Replace 'my_data' with the path to your file
-xobj.onreadystatechange = function () {
-      if (xobj.readyState == 4 && xobj.status == "200") {
-        // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
-        callback(xobj.responseText);
-      }
-};h
-xobj.send(null);  
-}
-
-
-function load() {
-
-loadJSON("data.json", function(response) {
-
-    var actual_JSON = JSON.parse(response);
-    console.log(actual_JSON);
-});
-
-
-}
-
-// var arr = ["a", "b", "c"];
-
-// var requestURL = 'https://smilindaisygal.github.io/data/pricing.json';
-// var request = new XMLHttpRequest();
-// request.open("GET", requestURL);
-// request.responseType = "json";
-// request.send();
-
-// request.onload = function() {
-// var pricing = request.response;
-
-
-
-// var requestURL = 'https://smilindaisygal.github.io/data/pricing.json';
-// var xmlhttp = new XMLHttpRequest();
-// request.open("GET", requestURL);
-// request.responseType = "json";
-// request.send();
-// xmlhttp.onreadystatechange = function() {
-//     if (this.readyState == 4 && this.status == 200) {
-//         var myObj = JSON.parse(this.responseText);
-//         document.getElementById("demo").innerHTML = services."Brake Adjustment";
-//     }
-// };
-// xmlhttp.open("GET", "json_demo.txt", true);
-// xmlhttp.send();
-
-// alert(user_profile.["Brake Adjustment"][1].description);
-// alert(user_profile.["Brake Bleed"][1].description);
-// alert(user_profile.["Brake Adjustment"][1].description);
-// alert(user_profile.["Brake Adjustment"][1].description);
-// alert(user_profile.["Brake Adjustment"][1].description);
-
-
-
-// var section = document.querySelector('section');
-// var requestURL = 'https://smilindaisygal.github.io/data/new.json';
-// var request = new XMLHttpRequest();
-// request.open('GET', requestURL);
-
-// request.responseType = 'json';
-// request.send();
-
-// request.onload = function() {
-//   var servicesRendered = request.response;
-//   showOffers(servicesRendered);
-// }
-
-// function showOffers(jsonObj) {
-//   var service = jsonObj['services'];
-      
-//   for (var i = 0; i < service.length; i++) {
-//     var myArticle = document.createElement('article');
-//     var myH2 = document.createElement('h2');
-//     var myPara1 = document.createElement('p');
-//     var myList = document.createElement('ul');
-
-//     myH2.textContent = service[i].name;
-//     myPara1.textContent = 'Services Offered: ';
-            
-//     var servicesOffered = service[i].offered;
-//     for (var j = 0; j < servicesOffered.length; j++) {
-//       var listItem = document.createElement('li');
-//       listItem.textContent = servicesOffered[j];
-//       myList.appendChild(listItem);
-//     }
-
-//     myArticle.appendChild(myH2);
-//     myArticle.appendChild(myPara1);
-//     myArticle.appendChild(myList);
-
-//     section.appendChild(myArticle);
-//   }
-// }
-
-
-
-
-  //  var section = document.querySelector('section.spin');
-  //  var requestURL = 'https://smilindaisygal.github.io/data/pricing.json';
-  //  var request = new XMLHttpRequest();
-  //  request.open('GET', requestURL);
-  //  request.responseType = 'json';
-  //  request.send();
-   
-  //  request.onload = function() {
-  // var pricing = request.response;
-  // showServices(pricing);
-  // }
-  // function showServices(jsonObj) {
-  //  var services = jsonObj['offered'];
-                    
-  //   for (var i = 0; i < services.length; i++) {
-  //   var myArticle = document.createElement('article');
-  //   var myH2 = document.createElement('h2');
-  //   var myPara1 = document.createElement('p');
-  //   var myList = document.createElement('ul');
-                 
-              
-  //   myH2.textContent = services[i].name;
-  //   myPara1.textContent = 'Offered:';
-                  
-  //   var manyServices = services[i].offered;
-  //   for (var j = 0; j < manyServices.length; j++) {
-  //   var listItem = document.createElement('li');
-  //   listItem.textContent = manyServices[j];
-  //   myList.appendChild(listItem);
-  //   }
-              
-  //   myArticle.appendChild(myH2);
-  //   myArticle.appendChild(myPara1);
-  //   myArticle.appendChild(myList);
-              
-  //   section.appendChild(myArticle);
-  //   }
-  // }
+request.onload = function() {
+	var jsondata = request.response;
+	var cities = jsondata['towns'];
+	for (var i = 0; i < cities.length; i++) {
+		var city = document.createElement('h3');
+		 city.textContent = cities[i].name + ' City';
+    var motto = document.createElement('p');
+     motto.textContent = '"' + cities[i].motto + '"';
+		output.appendChild(city);
+		output.appendChild(motto);
+	}
+};
 
                 
 </script> 
