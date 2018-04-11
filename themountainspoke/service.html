@@ -86,7 +86,15 @@
               
 <script>
 
-
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var myObj = JSON.parse(this.responseText);
+        document.getElementById("demo").innerHTML = myObj.services.brake_adjustment;
+    }
+};
+xmlhttp.open("GET", "https://smilindaisygal.github.io/data/pricing.json", true);
+xmlhttp.send();
 
 // var arr = ["a", "b", "c"];
 
@@ -123,45 +131,45 @@
 
 
 
-var section = document.querySelector('section');
-var requestURL = 'https://smilindaisygal.github.io/data/pricing.json';
-var request = new XMLHttpRequest();
-request.open('GET', requestURL);
+// var section = document.querySelector('section');
+// var requestURL = 'https://smilindaisygal.github.io/data/new.json';
+// var request = new XMLHttpRequest();
+// request.open('GET', requestURL);
 
-request.responseType = 'json';
-request.send();
+// request.responseType = 'json';
+// request.send();
 
-request.onload = function() {
-  var servicesRendered = request.response;
-  showOffers(servicesRendered);
-}
+// request.onload = function() {
+//   var servicesRendered = request.response;
+//   showOffers(servicesRendered);
+// }
 
-function showOffers(jsonObj) {
-  var service = jsonObj['services'];
+// function showOffers(jsonObj) {
+//   var service = jsonObj['services'];
       
-  for (var i = 0; i < service.length; i++) {
-    var myArticle = document.createElement('article');
-    var myH2 = document.createElement('h2');
-    var myPara1 = document.createElement('p');
-    var myList = document.createElement('ul');
+//   for (var i = 0; i < service.length; i++) {
+//     var myArticle = document.createElement('article');
+//     var myH2 = document.createElement('h2');
+//     var myPara1 = document.createElement('p');
+//     var myList = document.createElement('ul');
 
-    myH2.textContent = service[i].name;
-    myPara1.textContent = 'Services Offered: ';
+//     myH2.textContent = service[i].name;
+//     myPara1.textContent = 'Services Offered: ';
             
-    var servicesOffered = service[i].offered;
-    for (var j = 0; j < servicesOffered.length; j++) {
-      var listItem = document.createElement('li');
-      listItem.textContent = servicesOffered[j];
-      myList.appendChild(listItem);
-    }
+//     var servicesOffered = service[i].offered;
+//     for (var j = 0; j < servicesOffered.length; j++) {
+//       var listItem = document.createElement('li');
+//       listItem.textContent = servicesOffered[j];
+//       myList.appendChild(listItem);
+//     }
 
-    myArticle.appendChild(myH2);
-    myArticle.appendChild(myPara1);
-    myArticle.appendChild(myList);
+//     myArticle.appendChild(myH2);
+//     myArticle.appendChild(myPara1);
+//     myArticle.appendChild(myList);
 
-    section.appendChild(myArticle);
-  }
-}
+//     section.appendChild(myArticle);
+//   }
+// }
 
 
 
