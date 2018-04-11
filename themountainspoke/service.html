@@ -33,7 +33,7 @@
     </ul>
   </nav>
   <main class="space">
-          <!-- <section class="left">
+          <section class="left">
                 
             <h2>Service Menu</h2>
             <h4>Our Service Technicians - Trained, Talented, and Committed to Excellence!</h4>
@@ -47,31 +47,10 @@
                bicycle.  Regardless of the degree of your bike's disrepair, we’ll take on the 
                challenge if it makes sense economically!<br> $40 per hour labor rate, parts 
                additional.</span></p>
-            <h4>Big Box Bike Safety Check</h4>
-            <p>Roughly 75% of bikes purchased at Big Box Retailers fail basic safety checks due
-               to assembly errors. Even if there aren't outright safety issues, poor assembly
-               can mean missed shifting drivetrains, under-inflated tires, loose headsets,
-               wheels that are improperly tensioned and prone to damage, and other problems that
-               will shorten bicycles lifespan and make them unsafe to ride. Our certified techs
-               are happy to do a thorough safety check.</p>
-            <img class="flip" src="images/gears.jpg" alt="bike gears" width="200" height="200">
-            <h4>Bike Overhaul</h4> 
-            <p>Overhaul price varies, based on a number of factors – condition, age, brand/model,
-               and type/brand of replacement parts. Labor charge for this service is typically
-               within the following ranges:<br>
-            <ul>
-              <li>Kids/youth bike (geared)-$120-180</li>
-              <li>Adult rigid bike-$160-320</li>
-              <li>Suspension bike-$200-400</li>
-            </ul><br>
-
             <p>Price of parts will depend on what is required and the brand. We always strive to
                find parts of the highest quality at the most affordable price.</p>
             <img class="flop" src="images/biketire.jpg" alt="bike tire" width="150" height="200">
-            <h4>100% Satisfaction Guarantee </h4> 
-            <p>Once your bike has been serviced and repaired we recommend you take it for a
-               test ride and make certain you are 100% satisfied with your repair. </p>           
-        </section> <br><br> -->
+        </section> <br><br>
 <section>   
     
 </section>      
@@ -87,27 +66,13 @@
 <script>
 
 var output = document.querySelector('section');
-// var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-
 var requestURL = 'https://smilindaisygal.github.io/themountainspoke/data/new.json';
-
 var request = new XMLHttpRequest();
 request.open("GET", requestURL);
 request.responseType = 'json';
 request.send();
 
-// request.onload = function() {
-// 	var jsondata = request.response;
-// 	var cities = jsondata['towns'];
-// 	for (var i = 0; i < cities.length; i++) {
-// 		var city = document.createElement('h3');
-// 		 city.textContent = cities[i].name + ' City';
-//     var motto = document.createElement('p');
-//      motto.textContent = '"' + cities[i].motto + '"';
-// 		output.appendChild(city);
-// 		output.appendChild(motto);
-//   }
-  
+ 
   request.onload = function() {
 	var jsondata = request.response;
 	var services = jsondata['offers'];
@@ -115,7 +80,7 @@ request.send();
 		var service = document.createElement('h3');
      service.textContent = services[i].name + ' Service';
      
-    var description = document.createElement('p');
+    var description = document.createElement('h4');
     description.textContent = services[i].description;
     var cost = document.createElement('p');
     cost.textContent = services[i].cost;
@@ -124,8 +89,6 @@ request.send();
   }
 
 };
-
-                
 </script> 
 
                   
