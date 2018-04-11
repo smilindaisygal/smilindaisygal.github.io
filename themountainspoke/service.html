@@ -87,23 +87,39 @@
 <script>
 
 var output = document.querySelector('section');
-var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+// var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+var requestURL = 'https://smilindaisygal.github.io/themountainspoke/data/pricing.json';
+
 var request = new XMLHttpRequest();
 request.open("GET", requestURL);
 request.responseType = 'json';
 request.send();
 
-request.onload = function() {
+// request.onload = function() {
+// 	var jsondata = request.response;
+// 	var cities = jsondata['towns'];
+// 	for (var i = 0; i < cities.length; i++) {
+// 		var city = document.createElement('h3');
+// 		 city.textContent = cities[i].name + ' City';
+//     var motto = document.createElement('p');
+//      motto.textContent = '"' + cities[i].motto + '"';
+// 		output.appendChild(city);
+// 		output.appendChild(motto);
+//   }
+  
+  request.onload = function() {
 	var jsondata = request.response;
-	var cities = jsondata['towns'];
-	for (var i = 0; i < cities.length; i++) {
-		var city = document.createElement('h3');
-		 city.textContent = cities[i].name + ' City';
-    var motto = document.createElement('p');
-     motto.textContent = '"' + cities[i].motto + '"';
-		output.appendChild(city);
-		output.appendChild(motto);
-	}
+	var services = jsondata['offers'];
+	for (var i = 0; i < services.length; i++) {
+		var service = document.createElement('h3');
+		 service.textContent = services[i].name + ' Service';
+    // var motto = document.createElement('p');
+    //  motto.textContent = '"' + cities[i].motto + '"';
+		output.appendChild(service);
+		// output.appendChild(motto);
+  }
+
 };
 
                 
