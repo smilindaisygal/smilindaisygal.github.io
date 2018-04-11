@@ -24,8 +24,8 @@
   <button class="hamburger" onclick="toggleHam()">&#9776;</button>
   <nav>
     <ul class="navigation">
-        <li><a href="homepage.html">Home</a></li>
-        <li><a href="adventure.html">Adventure Tours</a></li>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="adventure.html">Adventure Tours</a></li>
     	<li><a href="events.html">Events</a></li>
     	<li><a href="sales.html">The Bike Store</a></li>
     	<li><a class="active" href="service.html">The Bike Shop</a></li>
@@ -33,7 +33,7 @@
     </ul>
   </nav>
   <main class="space">
-          <section class="left">
+          <!-- <section class="left">
                 
             <h2>Service Menu</h2>
             <h4>Our Service Technicians - Trained, Talented, and Committed to Excellence!</h4>
@@ -71,7 +71,7 @@
             <h4>100% Satisfaction Guarantee </h4> 
             <p>Once your bike has been serviced and repaired we recommend you take it for a
                test ride and make certain you are 100% satisfied with your repair. </p>           
-        </section> <br><br>
+        </section> <br><br> -->
 <section class="spin">   
     
 </section>      
@@ -85,49 +85,126 @@
  <script src="scripts/currentdate.js"></script>
               
 <script>
-              
-   var section = document.querySelector('section.spin');
-   var requestURL = 'https://smilindaisygal.github.io/data/pricing.json';
-   var request = new XMLHttpRequest();
-   request.open("GET", requestURL);
-   request.responseType = "json";
-   request.send();
-   
-   request.onload = function() {
-  var pricing = request.response;
-  showServices(pricing);
-  };
-  function showServices(jsonObj) {
-   var services = jsonObj["services"];
-                    
-    for (var i = 0; i < services.length; i++) {
-    if (
-    services[i].name == "Services"       )
-    { 
-    var myArticle = document.createElement("article");
-    var myH2 = document.createElement("h2");
-    var myPara1 = document.createElement("p");
-    var myList = document.createElement("ul");
-                 
-              
-    myH2.textContent = services[i].name;
-    myPara1.textContent = "Offered:";
-                  
-    var manyServices = services[i].offered;
-    for (var j = 0; j < manyServices.length; j++) {
-    var listItem = document.createElement("li");
-    listItem.textContent = manyServices[j];
-    myList.appendChild(listItem);
+
+
+
+// var arr = ["a", "b", "c"];
+
+// var requestURL = 'https://smilindaisygal.github.io/data/pricing.json';
+// var request = new XMLHttpRequest();
+// request.open("GET", requestURL);
+// request.responseType = "json";
+// request.send();
+
+// request.onload = function() {
+// var pricing = request.response;
+
+
+
+// var requestURL = 'https://smilindaisygal.github.io/data/pricing.json';
+// var xmlhttp = new XMLHttpRequest();
+// request.open("GET", requestURL);
+// request.responseType = "json";
+// request.send();
+// xmlhttp.onreadystatechange = function() {
+//     if (this.readyState == 4 && this.status == 200) {
+//         var myObj = JSON.parse(this.responseText);
+//         document.getElementById("demo").innerHTML = services."Brake Adjustment";
+//     }
+// };
+// xmlhttp.open("GET", "json_demo.txt", true);
+// xmlhttp.send();
+
+// alert(user_profile.["Brake Adjustment"][1].description);
+// alert(user_profile.["Brake Bleed"][1].description);
+// alert(user_profile.["Brake Adjustment"][1].description);
+// alert(user_profile.["Brake Adjustment"][1].description);
+// alert(user_profile.["Brake Adjustment"][1].description);
+
+
+
+var section = document.querySelector('section');
+var requestURL = 'https://smilindaisygal.github.io/data/pricing.json';
+var request = new XMLHttpRequest();
+request.open('GET', requestURL);
+
+request.responseType = 'json';
+request.send();
+
+request.onload = function() {
+  var servicesRendered = request.response;
+  showOffers(servicesRendered);
+}
+
+function showOffers(jsonObj) {
+  var service = jsonObj['services'];
+      
+  for (var i = 0; i < service.length; i++) {
+    var myArticle = document.createElement('article');
+    var myH2 = document.createElement('h2');
+    var myPara1 = document.createElement('p');
+    var myList = document.createElement('ul');
+
+    myH2.textContent = service[i].name;
+    myPara1.textContent = 'Services Offered: ';
+            
+    var servicesOffered = service[i].offered;
+    for (var j = 0; j < servicesOffered.length; j++) {
+      var listItem = document.createElement('li');
+      listItem.textContent = servicesOffered[j];
+      myList.appendChild(listItem);
     }
-              
+
     myArticle.appendChild(myH2);
     myArticle.appendChild(myPara1);
     myArticle.appendChild(myList);
-              
+
     section.appendChild(myArticle);
-    }
   }
 }
+
+
+
+
+  //  var section = document.querySelector('section.spin');
+  //  var requestURL = 'https://smilindaisygal.github.io/data/pricing.json';
+  //  var request = new XMLHttpRequest();
+  //  request.open('GET', requestURL);
+  //  request.responseType = 'json';
+  //  request.send();
+   
+  //  request.onload = function() {
+  // var pricing = request.response;
+  // showServices(pricing);
+  // }
+  // function showServices(jsonObj) {
+  //  var services = jsonObj['offered'];
+                    
+  //   for (var i = 0; i < services.length; i++) {
+  //   var myArticle = document.createElement('article');
+  //   var myH2 = document.createElement('h2');
+  //   var myPara1 = document.createElement('p');
+  //   var myList = document.createElement('ul');
+                 
+              
+  //   myH2.textContent = services[i].name;
+  //   myPara1.textContent = 'Offered:';
+                  
+  //   var manyServices = services[i].offered;
+  //   for (var j = 0; j < manyServices.length; j++) {
+  //   var listItem = document.createElement('li');
+  //   listItem.textContent = manyServices[j];
+  //   myList.appendChild(listItem);
+  //   }
+              
+  //   myArticle.appendChild(myH2);
+  //   myArticle.appendChild(myPara1);
+  //   myArticle.appendChild(myList);
+              
+  //   section.appendChild(myArticle);
+  //   }
+  // }
+
                 
 </script> 
 

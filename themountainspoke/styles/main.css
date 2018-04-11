@@ -153,19 +153,19 @@ header img {
     padding: 1px 1px;
 }
 
-.spin table {
+section.spin table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
 }
 
-.spin td, th {
+section.spin td, th {
     border: 1px solid #736ba8;
     text-align: left;
     padding: 8px;
 }
 
-.spin tr:nth-child(even) {
+section.spin tr:nth-child(even) {
     background-color: #dacd8c ;
 }
 
