@@ -1,69 +1,33 @@
 {
     "services": [
         {
-       "Brake Adjustment" : "$10" ,
-       "Brake Bleed" : "$25" ,
-       "Brake Overhaul (coaster)" : "$35" ,
-       "Cable Replacement" : "$15" ,
-       "Clean Dirty Bike" : "$10",
-       "Derailleur Adjustment" : "$10",
-       "Drivetrain Clean" : "$50" ,
-       "Fork Services" : "$50" ,
-       "Handle Bar Wrap/Tape" : "$10" ,
-       "Headset Adjustment" : "$10" ,
-       "Headset Overhaul" : "$25" ,
-       "Bike Assembly - Basic" : "$60" ,
-       "Bike Assembly - Full Suspension" : "$75" ,
-       "Bike Assembly - High End Road Bike" : "$75" ,
-       "Electric Shift" : "$85" ,
-       "Chain Replacement - Single Speed" : "$5" ,
-       "Chain Replacement - Multi Speed" : "$15" ,
-       "Hub Adjustment - Front" : "$8" ,
-       "Hub Adjustment - Rear" : "$10" ,
-       "Hub Overhaul - Front" : "$15" ,
-       "Hub Overhaul - Rear" : "$15" ,
-       "Shock Service" : "$35" ,
-       "Tire/Tube Replacement" : "$6" ,
-       "Tubular Tire Installation" : "$50" ,
-       "Wheel Building" : "$45" ,
-       "Wheel Truing - basic" : "$15" ,
-       "Wheel Truing - major" : "$35"
+       "brake_adjustment" : "$10" ,
+       "brake_bleed" : "$25" ,
+       "brake_overhaul" : "$35" ,
+       "cable_replacement" : "$15" ,
+       "clean_dirty_bike" : "$10",
+       "derailleur_adjustment" : "$10",
+       "drivetrain_clean" : "$50" ,
+       "fork_services" : "$50" ,
+       "handle_bar_wrap" : "$10" ,
+       "headset_adjustment" : "$10" ,
+       "headset_overhaul" : "$25" ,
+       "basic_bike_assembly" : "$60" ,
+       "full_suspension_bike_assembly" : "$75" ,
+       "high_end_road_bike_assembly" : "$75" ,
+       "electric_shift" : "$85" ,
+       "single_speed_chain_replacement" : "$5" ,
+       "multi_speed_chain_replacement" : "$15" ,
+       "front_hub_adjustment" : "$8" ,
+       "rear_hub_adjustment" : "$10" ,
+       "rear_hub_overhaul" : "$15" ,
+       "front_hub_overhaul" : "$15" ,
+       "shock_service" : "$35" ,
+       "tire_tube_replacement" : "$6" ,
+       "tubular_tire_installation" : "$50" ,
+       "wheel_building" : "$45" ,
+       "basic_wheel_truing" : "$15" ,
+       "major_wheel_truing" : "$35"
 }
-
-
-]
-}{
-    "services": [
-        {
-       "Brake Adjustment" : "$10" ,
-       "Brake Bleed" : "$25" ,
-       "Brake Overhaul (coaster)" : "$35" ,
-       "Cable Replacement" : "$15" ,
-       "Clean Dirty Bike" : "$10",
-       "Derailleur Adjustment" : "$10",
-       "Drivetrain Clean" : "$50" ,
-       "Fork Services" : "$50" ,
-       "Handle Bar Wrap/Tape" : "$10" ,
-       "Headset Adjustment" : "$10" ,
-       "Headset Overhaul" : "$25" ,
-       "Bike Assembly - Basic" : "$60" ,
-       "Bike Assembly - Full Suspension" : "$75" ,
-       "Bike Assembly - High End Road Bike" : "$75" ,
-       "Electric Shift" : "$85" ,
-       "Chain Replacement - Single Speed" : "$5" ,
-       "Chain Replacement - Multi Speed" : "$15" ,
-       "Hub Adjustment - Front" : "$8" ,
-       "Hub Adjustment - Rear" : "$10" ,
-       "Hub Overhaul - Front" : "$15" ,
-       "Hub Overhaul - Rear" : "$15" ,
-       "Shock Service" : "$35" ,
-       "Tire/Tube Replacement" : "$6" ,
-       "Tubular Tire Installation" : "$50" ,
-       "Wheel Building" : "$45" ,
-       "Wheel Truing - basic" : "$15" ,
-       "Wheel Truing - major" : "$35"
-}
-
-
 ]
 }
