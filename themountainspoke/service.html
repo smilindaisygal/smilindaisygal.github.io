@@ -116,9 +116,9 @@ request.send();
     //  service.textContent = services[i].name + ' Service';
      
     var description = document.createElement('p');
-    description.textContent = '"' + services[i].description + '"';
+    description.textContent = services[i].description;
     var cost = document.createElement('p');
-    cost.textContent = '"' + services[i].cost + '"';
+    cost.textContent = services[i].cost;
 		output.appendChild(description);
 		output.appendChild(cost);
   }
