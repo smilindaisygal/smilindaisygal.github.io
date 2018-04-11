@@ -153,13 +153,13 @@ header img {
     padding: 1px 1px;
 }
 
-section h4 {
+section.spin h4 {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
 }
 
-section p {
+section.spin p {
     border: 1px solid #736ba8;
     text-align: left;
     padding: 8px;
