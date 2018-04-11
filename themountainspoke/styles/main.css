@@ -119,7 +119,7 @@ header img {
   grid-auto-flow: dense;
   grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
   padding-bottom: 280px;
-} 
+}  
 
  .grid2 li {
     list-style-type: none;
@@ -161,7 +161,7 @@ section.spin h4 {
 
 section.spin p {
     border: 1px solid #736ba8;
-    text-align: left;
+    text-align: center;
     padding: 8px;
     background-color: #dacd8c ;
 }
