@@ -15,6 +15,15 @@ header {
     text-align: left;
 }
 
+video {
+    display: block;
+    margin: 0 auto;
+}
+
+.video-credit {
+    text-align: center;
+}
+
 footer { 
     max-width: 100%;
     font-family: 'Merriweather', serif;
@@ -23,7 +32,7 @@ footer {
 
 nav, main {
     max-width: 100%;
-   font-family: 'Padauk', sans-serif;
+    font-family: 'Padauk', sans-serif;
     text-align: center;
 }
 
@@ -45,6 +54,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .dots {
     list-style-type: none;
+    text-align: left;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.dots1 {
+    list-style-type: none;
+    text-align: left;
+    padding-right: 10px;
+    padding-left: 170px;
 }
 
 header img {
@@ -71,7 +90,7 @@ header img {
 }
 
 .navigation.responsive {
-     position: relative;
+    position: relative;
 }
 
 .navigation.responsive li { 
@@ -89,7 +108,7 @@ header img {
     text-align: center;	
     display: flex;
     flex: 1 1 100%;
-    text-decoration:none; 
+    text-decoration: none; 
 }
 
 .navigation.responsive li a.acive {
@@ -97,28 +116,36 @@ header img {
 }
 
 .navigation.responsive li a:hover:not(.active) { 
-    background-color:   #ffdb26;  
+    background-color: #ffdb26;  
+}
+
+form {
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 
 .grid {
-  list-style-type: none;
-  margin: 2em;
-  display: grid;
-  grid-gap: 10px;
-  grid-auto-flow: dense;
-  grid-template-columns: repeat(auto-fill,minmax(300px, 1fr)); 
+    list-style-type: none;
+    margin: 2em;
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr)); 
 }
 
  .grid2 {
     
-  list-style-type: none;  
-  margin: 2em;
-  display: grid;
-  grid-gap: 10px;
-  grid-auto-flow: dense;
-  grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
-  padding-bottom: 190px;
+    list-style-type: none;  
+    margin: 2em;
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    padding-bottom: 190px;
 }  
 
  .grid2 li {
@@ -142,7 +169,7 @@ header img {
 	/* Hide the Submenus */
     display:none;
     
-} */
+}
 
 
 .img {
@@ -153,17 +180,16 @@ header img {
     padding: 1px 1px;
 }
 
+section.spin {
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    align-content: center;
+}
+
 section.spin h4 {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;
-}
-
-section.spin p {
-    border: 1px solid #736ba8;
-    text-align: center;
-    padding: 8px;
-    background-color: #dacd8c ;
 }
 
 /* section tr:nth-child(even) {
@@ -186,7 +212,6 @@ section.spin p {
     height: 300px;
     float: right;
     padding: 0 5px 0 5px;
-
 }
 
 left {
@@ -205,54 +230,69 @@ left {
     padding: 0 1rem 0 0;
 }
 
-.flipflop {
-    text-align: center;
-   
-}
-
 .flip {
+    padding-top: 20px;
     float: left;
     padding-right: 20px;
-    
 }
 
 .flop {
+    padding-top: 20px;
     float: right;
     padding-left: 20px;
 }
 
+.registration {
+    list-style-type: none;
+    text-align: center;
+}
+
 .april {
     text-align: left;
-    padding-left: 10px;
+    padding-left: 110px;
+    padding-right: 50px;
 }
 
 .haha {
     margin-bottom: 20px;
-}
+    text-align: center;
+}    
 
 .bikeform {
     background-color:#f8f8f2;
     border: 3px;
-   }
-
-.space {
-    padding-bottom: 80px; 
 }
 
+.space {
+    padding-bottom: 80px;
+    text-align: left; 
+}
+
+.grin{
+    width: 60%;
+    padding-bottom: 80px;
+    text-align: left;
+}
+
+.space1 {
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
 .bikeform h2, h3, h4, h5, h6{
     color:#598522;
 }   
 
 label {
-    width:180px;
-    clear:left;
-    text-align:right;
-    padding-right:10px;
+    width: 180px;
+    clear: left;
+    text-align: right;
+    padding-right: 10px;
 }
 
 textarea {
-    width:200px;
-    height:100px;
+    width: 200px;
+    height: 100px;
 }
 
 input, label, select, textarea { 
